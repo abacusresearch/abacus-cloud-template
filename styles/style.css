@@ -1,4 +1,37 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+@font-face {
+  font-family: 'Europa';
+  src: url('../fonts/Europa-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Europa-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Europa-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Europa-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Europa-Bold.svg#Europa-Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+
+@font-face {
+  font-family: 'Europa';
+  src: url('../fonts/Europa-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Europa-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Europa-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Europa-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Europa-Regular.svg#Europa-Regular') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+  outline: 0;
+}
+
 /* MARGINS & PADDINGS */
 .p-xxs {
   padding: 5px !important;
@@ -1497,10 +1530,10 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
 }
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Europa, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #fff;
   font-size: 13px;
   color: #2b2b2b;
@@ -1585,7 +1618,7 @@ body {
 .fixed-sidebar #menu {
   position: fixed;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .fixed-sidebar.show-sidebar #menu {
   width: 180px;
@@ -2290,7 +2323,6 @@ body.fullscreen-panel-mode {
 /* Slider */
 #logo {
   float: left;
-  width: 180px;
   background-color: #1677cb;
   padding: 18px 10px 18px 18px;
   height: 56px;
@@ -2307,9 +2339,9 @@ body.fullscreen-panel-mode {
   text-align: center;
 }
 #logo.light-version span {
-  font-weight: 600;
-  color: #1677cb;
-  font-size: 14px;
+  font-weight: 400;
+  color: #2b2b2b;
+  font-size: 16px;
 }
 .profile-picture {
   padding: 20px 20px;
