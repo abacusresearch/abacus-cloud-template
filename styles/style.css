@@ -2307,6 +2307,8 @@ textarea.form-control {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 2;
+  cursor: pointer;
   width: auto;
   font-size: 20px;
 }
