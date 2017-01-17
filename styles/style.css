@@ -2241,6 +2241,8 @@ textarea.form-control {
 .floating-label-wrap {
   position: relative;
   display: block;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 .floating-label-wrap label {
