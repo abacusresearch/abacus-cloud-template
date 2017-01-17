@@ -111,11 +111,6 @@ $(document).ready(function () {
     // Fix Bootstrap backdrop issu with animation.css
     $('.modal').appendTo("body")
 
-
-    // initialize select2
-
-    $("select.form-control").select2();
-
 });
 
 $(window).bind("load", function () {
