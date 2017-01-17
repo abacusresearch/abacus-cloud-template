@@ -2282,7 +2282,7 @@ textarea.form-control {
   transform: translateY(-15px);
 }
 
-.form-control:focus ~ label {
+.floating-label-wrap .select2-dropdown-open ~ label, .form-control:focus ~ label {
   color: #1677CB;
 }
 
