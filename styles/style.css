@@ -1500,11 +1500,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 400;
 }
 
-small {
+small, .small {
   font-size: 100%;
   color: #7c8998;
   font-weight: 400
 }
+
 /* iCheck plugin Square skin, green
 ----------------------------------- */
 .icheckbox_square-green,
@@ -2266,6 +2267,9 @@ textarea.form-control {
 
 .floating-label-wrap label {
   z-index: 1;
+}
+.floating-label-wrap label .error {
+  font-size: 11px;
 }
 .floating-label-wrap .form-control:disabled ~ label {
   z-index: 3;
