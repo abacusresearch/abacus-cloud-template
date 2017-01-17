@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/select2/select2.css" />
-    <link rel="stylesheet" href="bower_components/select2-bootstrap/select2-bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" />
+
     <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" />
     <link rel="stylesheet" href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
     <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
@@ -27,6 +26,7 @@
     <!-- App styles -->
     <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
     <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/select2-abacus.css">
     <link rel="stylesheet" href="styles/style.css">
 
 
@@ -194,77 +194,73 @@
                     </p>
 
                     <h5>Bootstrap theme with Select 2 - basic example</h5>
-                    <select class="js-source-states" style="width: 100%">
-                        <optgroup label="Alaskan/Hawaiian Time Zone">
-                            <option value="AK">Alaska</option>
-                            <option value="HI">Hawaii</option>
-                        </optgroup>
-                        <optgroup label="Pacific Time Zone">
-                            <option value="CA">California</option>
-                            <option value="NV">Nevada</option>
-                            <option value="OR">Oregon</option>
-                            <option value="WA">Washington</option>
-                        </optgroup>
-                        <optgroup label="Mountain Time Zone">
-                            <option value="AZ">Arizona</option>
-                            <option value="CO">Colorado</option>
-                            <option value="ID">Idaho</option>
-                            <option value="MT">Montana</option>
-                            <option value="NE">Nebraska</option>
-                            <option value="NM">New Mexico</option>
-                            <option value="ND">North Dakota</option>
-                            <option value="UT">Utah</option>
-                            <option value="WY">Wyoming</option>
-                        </optgroup>
-                        <optgroup label="Central Time Zone">
-                            <option value="AL">Alabama</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="IL">Illinois</option>
-                            <option value="IA">Iowa</option>
-                            <option value="KS">Kansas</option>
-                            <option value="KY">Kentucky</option>
-                            <option value="LA">Louisiana</option>
-                            <option value="MN">Minnesota</option>
-                            <option value="MS">Mississippi</option>
-                            <option value="MO">Missouri</option>
-                            <option value="OK">Oklahoma</option>
-                            <option value="SD">South Dakota</option>
-                            <option value="TX">Texas</option>
-                            <option value="TN">Tennessee</option>
-                            <option value="WI">Wisconsin</option>
-                        </optgroup>
-                        <optgroup label="Eastern Time Zone">
-                            <option value="CT">Connecticut</option>
-                            <option value="DE">Delaware</option>
-                            <option value="FL">Florida</option>
-                            <option value="GA">Georgia</option>
-                            <option value="IN">Indiana</option>
-                            <option value="ME">Maine</option>
-                            <option value="MD">Maryland</option>
-                            <option value="MA">Massachusetts</option>
-                            <option value="MI">Michigan</option>
-                            <option value="NH">New Hampshire</option>
-                            <option value="NJ">New Jersey</option>
-                            <option value="NY">New York</option>
-                            <option value="NC">North Carolina</option>
-                            <option value="OH">Ohio</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="RI">Rhode Island</option>
-                            <option value="SC">South Carolina</option>
-                            <option value="VT">Vermont</option>
-                            <option value="VA">Virginia</option>
-                            <option value="WV">West Virginia</option>
-                        </optgroup>
-                    </select>
-
-                    <h5 class="m-t-md">Multi Selection example</h5>
-                    <select class="js-source-states-2" multiple="multiple" style="width: 100%">
-                            <option value="Blue">Blue</option>
-                            <option value="Red">Red</option>
-                            <option value="Green">Green</option>
-                            <option value="Maroon">Maroon</option>
-                    </select>
-
+                    <div class="floating-label-wrap">
+                        <select class="form-control" style="width: 100%" onchange="this.setAttribute('data-value', this.value);" data-value="">
+                            <option value=""></option>
+                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="Mountain Time Zone">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                                <option value="ID">Idaho</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                            <optgroup label="Central Time Zone">
+                                <option value="AL">Alabama</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TX">Texas</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="WI">Wisconsin</option>
+                            </optgroup>
+                            <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="IN">Indiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="OH">Ohio</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WV">West Virginia</option>
+                            </optgroup>
+                        </select>
+                        
+                        <label>Select Floating Label</label>
+                    </div>
 
                 </div>
             </div>
@@ -311,19 +307,25 @@
                                     <p>
                                         The simplest case: focusing the input (clicking or tabbing into it) will show the picker.
                                     </p>
-                                    <input id="datapicker2" type="text" value="02-16-2012" class="form-control">
+                                    <div class="floating-label-wrap">
+                                        <input id="datapicker2" type="text" onchange="this.setAttribute('value', this.value);" data-value="" class="form-control">
 
+                                        <label>Date Label</label>
+
+                                    </div>
                                     <h5>Component</h5>
 
                                     <p>
                                         Adding the date class to an input-group bootstrap component will allow the input-group-addon elements to trigger the picker.
                                     </p>
 
-                                    <div class="input-group date">
-                                        <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                    <div class="floating-label-wrap date">
+                                        <input id="datepicker-icon" type="text" class="form-control" onchange="this.setAttribute('value', this.value);" data-value="">
+                                        <label>Date Label</label>
+                                        <span class="input-group-addon"><i class="pe-7s-date"></i></span>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <!-- <div class="col-md-6">
                                     <h5>
                                         Range
                                     </h5>
@@ -343,7 +345,7 @@
                                     <p>
                                         There are many avalible options to datapicker, check: <a href="https://bootstrap-datepicker.readthedocs.org/en/latest/options.html" target="_blank">https://bootstrap-datepicker.readthedocs.org/en/latest/options.html</a>
                                     </p>
-                                </div>
+                                </div> -->
 
                             </div>
 
@@ -526,10 +528,6 @@
                             </fieldset>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
 
@@ -538,120 +536,6 @@
     </div>
 
 </div>
-
-    <!-- Right sidebar -->
-    <div id="right-sidebar" class="animated fadeInRight">
-
-        <div class="p-m">
-            <button id="sidebar-close" class="right-sidebar-toggle sidebar-button btn btn-default m-b-md"><i class="pe pe-7s-close"></i>
-            </button>
-            <div>
-                <span class="font-bold no-margins"> Analytics </span>
-                <br>
-                <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
-            </div>
-            <div class="row m-t-sm m-b-sm">
-                <div class="col-lg-6">
-                    <h3 class="no-margins font-extra-bold text-success">300,102</h3>
-
-                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="no-margins font-extra-bold text-success">280,200</h3>
-
-                    <div class="font-bold">98% <i class="fa fa-level-up text-success"></i></div>
-                </div>
-            </div>
-            <div class="progress m-t-xs full progress-small">
-                <div style="width: 25%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar"
-                     class=" progress-bar progress-bar-success">
-                    <span class="sr-only">35% Complete (success)</span>
-                </div>
-            </div>
-        </div>
-        <div class="p-m bg-light border-bottom border-top">
-            <span class="font-bold no-margins"> Social talks </span>
-            <br>
-            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.</small>
-            <div class="m-t-md">
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a1.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">John Novak</span>
-                            <small class="text-muted">21.03.2015</small>
-                            <div class="social-content small">
-                                Injected humour, or randomised words which don't look even slightly believable.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a3.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">Mark Smith</span>
-                            <small class="text-muted">14.04.2015</small>
-                            <div class="social-content">
-                                Many desktop publishing packages and web page editors.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-talk">
-                    <div class="media social-profile clearfix">
-                        <a class="pull-left">
-                            <img src="images/a4.jpg" alt="profile-picture">
-                        </a>
-
-                        <div class="media-body">
-                            <span class="font-bold">Marica Morgan</span>
-                            <small class="text-muted">21.03.2015</small>
-
-                            <div class="social-content">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="p-m">
-            <span class="font-bold no-margins"> Sales in last week </span>
-            <div class="m-t-xs">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <small>Today</small>
-                        <h4 class="m-t-xs">$170,20 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                    <div class="col-xs-6">
-                        <small>Last week</small>
-                        <h4 class="m-t-xs">$580,90 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <small>Today</small>
-                        <h4 class="m-t-xs">$620,20 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                    <div class="col-xs-6">
-                        <small>Last week</small>
-                        <h4 class="m-t-xs">$140,70 <i class="fa fa-level-up text-success"></i></h4>
-                    </div>
-                </div>
-            </div>
-            <small> Lorem Ipsum is simply dummy text of the printing simply all dummy text.
-                Many desktop publishing packages and web page editors.
-            </small>
-        </div>
-
-    </div>
 
     <!-- Footer-->
     <footer class="footer">
@@ -673,7 +557,6 @@
 <script src="bower_components/sparkline/index.js"></script>
 <script src="bower_components/moment/moment.js"></script>
 <script src="bower_components/select2/select2.min.js"></script>
-<script src="bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
 <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 
@@ -684,43 +567,23 @@
 
         $(function(){
 
+            $('.date .input-group-addon').click(function() {
+                $('#datepicker-icon').focus();
+            });
+
             $('#datepicker').datepicker();
             $("#datepicker").on("changeDate", function(event) {
                 $("#my_hidden_input").val(
-                        $("#datepicker").datepicker('getFormattedDate')
+                    $("#datepicker").datepicker('getFormattedDate')
                 )
             });
+            $('#datepicker-icon').datepicker();
 
             $('#datapicker2').datepicker();
-            $('#datepicker .input-group.date').datepicker({ });
-            $('#datepicker .input-daterange').datepicker({ });
+            $('#datepicker .input-group.date').datepicker();
+            $('#datepicker .input-daterange').datepicker();
 
-            $("#demo1").TouchSpin({
-                min: 0,
-                max: 100,
-                step: 0.1,
-                decimals: 2,
-                boostat: 5,
-                maxboostedstep: 10,
-            });
-
-            $("#demo2").TouchSpin({
-                verticalbuttons: true
-            });
-
-            $("#demo3").TouchSpin({
-                postfix: '%'
-            });
-
-            $("#demo4").TouchSpin({
-                postfix: "a button",
-                postfix_extraclass: "btn btn-default"
-            });
-
-            $(".js-source-states").select2();
-            $(".js-source-states-2").select2();
-
-
+            $("select.form-control").select2();
 
             // DateTimePicker
             $('#datetimepicker1').datetimepicker();

@@ -2208,7 +2208,7 @@ body.fullscreen-panel-mode {
 .form-control {
   position: relative;
   height: 34px;
-  padding: 6px 10px 6px 0;
+  padding: 6px 0;
   font-size: 14px;
   line-height: 1.42857143;
   color: #2b2b2b;
@@ -2238,23 +2238,24 @@ textarea.form-control {
   border-color: #7c8998;
 }
 
-.label-wrapper {
+.floating-label-wrap {
   position: relative;
+  display: block;
 }
 
-.label-wrapper label {
+.floating-label-wrap label {
   z-index: 1;
 }
-.label-wrapper .form-control:disabled + label {
+.floating-label-wrap .form-control:disabled ~ label {
   z-index: 3;
   left: 10px;
 }
 
-.label-wrapper .form-control {
+.floating-label-wrap .form-control {
   z-index: 2;
 }
 
-.form-control + label {
+.floating-label-wrap .form-control ~ label {
   position: absolute;
   top: 6px;
   left: 0;
@@ -2265,18 +2266,23 @@ textarea.form-control {
   transition: all .15s ease-in-out;
 }
 
-textarea.form-control + label {
+.floating-label-wrap textarea.form-control ~ label {
   top: 0;
   font-size: 14px !important;
   transform: translateY(-26px) !important;
 }
 
-.form-control:focus + label, .form-control:not([value=""]) + label {
+.floating-label-wrap .form-control:focus ~ label, .floating-label-wrap .form-control:not([data-value=""]):not(.select2-container):not(select) ~ label {
   font-size: 11px;
   transform: translateY(-15px);
 }
 
-.form-control:focus + label {
+.floating-label-wrap .select2-dropdown-open ~ label, .floating-label-wrap select.form-control:not([data-value=""]) ~ label {
+  font-size: 11px;
+  transform: translateY(-15px);
+}
+
+.form-control:focus ~ label {
   color: #1677CB;
 }
 
@@ -2290,7 +2296,18 @@ textarea.form-control + label {
 
 /* floating labels end */
 
+/* datepicker */
 
+.floating-label-wrap .input-group-addon, .floating-label-wrap .input-group-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  font-size: 20px;
+}
+.floating-label-wrap .input-group-addon {
+  padding-right: 4px;
+}
 
 .has-warning .form-control,
 .has-error .form-control,
