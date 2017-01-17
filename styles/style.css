@@ -426,6 +426,10 @@ body.modal-open {
 .progress-bar-success {
   border-right: 4px solid #58b62c;
 }
+.progress-bar-primary {
+  background-color: #1677cb;
+  border-right: 4px solid #205b8e;
+}
 .progress-bar-info {
   border-right: 4px solid #258cd1;
 }
@@ -1963,12 +1967,17 @@ body.fullscreen-panel-mode {
 .hpanel.fullscreen .panel-body {
   min-height: calc(100% - 77px);
 }
+.nav-tabs > li > a {
+  color: #2b2b2b;
+}
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
+  color: #2b2b2b;
   border: 1px solid #e4e5e7;
   border-bottom-color: transparent;
 }
+
 .nav-tabs {
   border-bottom: 1px solid #e4e5e7;
 }
