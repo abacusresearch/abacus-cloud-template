@@ -2499,8 +2499,10 @@ textarea.form-control {
 #side-menu li.active {
   background: #fff;
 }
-.arrow {
+#side-menu .arrow {
   float: right;
+  position: relative;
+  top: 3px;
 }
 .fa.arrow:before {
   content: "\f104";
@@ -2944,6 +2946,9 @@ h6 {
   border: solid 1px #7c8998;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu.with-arrow {
+  top: calc(100% - 5px);
 }
 .dropdown-menu.with-arrow:before {
   content: '';
