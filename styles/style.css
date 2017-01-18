@@ -488,7 +488,7 @@ body.blank {
 .login-container {
   max-width: 420px;
   margin: auto;
-  padding-top: 6%;
+  padding-top: 50px;
 }
 .register-container {
   max-width: 720px;
@@ -1020,7 +1020,7 @@ body.blank {
 }
 /* Buttons */
 .btn {
-  padding: 7px 12px;
+  padding: 7px 20px;
 }
 .btn-lg, .btn-group-lg > .btn {
   font-size: 16px;
@@ -1474,15 +1474,12 @@ fieldset[disabled] .btn-link.active {
 }
 /* Fonts */
 .font-light {
-  font-weight: 300;
+  font-weight: 200;
 }
 .font-normal {
   font-weight: 400;
 }
-.font-bold {
-  font-weight: 600;
-}
-.font-extra-bold {
+.font-bold, .font-extra-bold {
   font-weight: 700;
 }
 .font-uppercase {
@@ -1491,9 +1488,13 @@ fieldset[disabled] .btn-link.active {
 .font-trans {
   opacity: 0.5 !important;
 }
+.text-icon-28 {
+  font-size: 28px; 
+}
 .text-big {
   font-size: 60px;
 }
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1576,7 +1577,6 @@ body {
   color: #2b2b2b;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 #header {
   background-color: #fff;
@@ -1797,8 +1797,7 @@ body {
   color: inherit;
   border: 1px solid #e4e5e7;
   border-top: none;
-  font-size: 90%;
-  background: #f9f9fa;
+  background: #fff;
   padding: 10px 15px;
 }
 .hpanel.panel-collapse > .panel-heading,
@@ -2143,9 +2142,16 @@ body.fullscreen-panel-mode {
 .google-map {
   height: 300px;
 }
+.hr-line {
+  background-color: #e4e5e7;
+  color: transparent;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .hr-line-dashed {
   background-color: transparent;
-  border-top: 1px dotted #f5f5f7;
+  border-top: 1px dotted #e4e5e7;
   color: transparent;
   height: 1px;
   margin: 20px 0;
@@ -2181,6 +2187,9 @@ body.fullscreen-panel-mode {
 }
 .h-bg-red-deep {
   background: #c0392b;
+}
+.text-underline {
+  text-decoration: underline;
 }
 .text-primary {
   color: #1677cb;
@@ -3743,203 +3752,20 @@ ul.h-list li:hover a {
     -webkit-transform: scaleY(1);
   }
 }
-.landing-page .navbar-form-custom,
-.landing-page .navbar-right,
-.landing-page #logo {
-  display: block;
-}
-.landing-page .navbar-default {
-  background: #fff;
-}
-.landing-page .navbar .navbar-brand {
-  font-size: 12px;
-  height: auto;
-  margin-top: 8px;
-  padding: 9px 15px;
-  font-weight: 700;
-  border-radius: 5px;
-  color: #fff;
-  display: block;
-  background-color: #13ce66;
-  margin-left: 0;
-}
-.landing-page .navbar-default .navbar-toggle:hover,
-.landing-page .navbar-default .navbar-toggle:focus {
-  background: #13ce66;
-}
-.landing-page .navbar-default .navbar-toggle:hover .icon-bar,
-.landing-page .navbar-default .navbar-toggle:focus .icon-bar {
-  background-color: #fff !important;
-}
-.landing-page .navbar-default .navbar-nav > .active > a,
-.landing-page .navbar-default .navbar-nav > .active > a:hover,
-.landing-page .navbar-default .navbar-nav > .active > a:focus {
-  background-color: transparent;
-  color: #13ce66;
-  border: none;
-}
-.landing-page .navbar-default li a:hover {
-  border-bottom: none;
-}
-.landing-page .brand-desc {
-  color: #455463;
-  margin: 17px 10px 0 90px;
-  width: 180px;
-}
-.landing-page .navbar-nav > li > a {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 15px;
-  color: #455463;
-}
-.landing-page .navbar-nav > li,
-.landing-page .navbar-nav > li > a {
-  height: 55px;
-}
-.landing-page header {
-  background: url('../images/landing/header.jpg') 50% 0 no-repeat;
-  height: 480px;
+
+
+/* form panels */
+
+.form-panel-container {
+  margin: auto;
   padding-top: 50px;
-  margin-bottom: 30px;
-}
-.landing-page section {
-  padding: 50px 0 50px 0;
-  border-bottom: 1px solid #e4e5e7;
-}
-.landing-page section h2 {
-  margin-top: 0;
-}
-.landing-page section p {
-  margin-top: 0px;
-}
-.landing-page header .container {
-  position: relative;
-}
-.landing-page .heading {
-  margin-top: 60px;
-  color: #edf0f5;
-}
-.landing-page .heading h1 {
-  font-weight: 600;
-  font-size: 34px;
-  margin-bottom: 5px;
-  letter-spacing: -0.5px;
-}
-.landing-page h4 {
-  font-weight: 600;
-}
-.landing-page p {
-  color: #a7afb8;
-}
-.landing-page .heading span {
-  font-size: 13px;
-  font-weight: 600;
-}
-.landing-page .heading p.small {
-  margin-top: 10px;
-  color: #a7afb8;
-  max-width: 260px;
-}
-.landing-page .heading-image {
-  position: absolute;
-  right: 60px;
-  top: 120px;
-  text-align: right;
-}
-.landing-page .heading-image p {
-  color: #a7afb8;
-  margin-bottom: 5px;
-}
-.landing-page .heading-image img {
-  -webkit-box-shadow: 0px 0px 8px 0px #333333;
-  -moz-box-shadow: 0px 0px 8px 0px #333333;
-  box-shadow: 0px 0px 8px 0px #333333;
-  margin-left: 12px;
-  margin-top: 12px;
-  width: 180px;
-  border-radius: 1px;
-}
-.landing-page .navy-link {
-  background: #455463;
-  color: #fff;
-}
-.landing-page .icon-big {
-  font-size: 70px;
-}
-.landing-page .team-member img {
-  height: 72px;
-}
-.landing-page .social-icon a {
-  background: #13ce66;
-  color: #fff;
-  text-align: center;
-  padding: 4px 8px;
-  height: 28px;
-  width: 28px;
-  display: block;
-  border-radius: 4px;
-}
-.landing-page .list-inline > li {
-  padding: 0;
-}
-.landing-page .social-icon a:hover {
-  background: #5abb2d;
-}
-.landing-page .pricing-plan {
-  margin: 20px 10px 0 10px;
-  border-radius: 4px;
-  padding-bottom: 20px;
-  background: #fff;
-  border: 1px solid #e4e5e7;
-}
-.landing-page .pricing-plan li {
-  padding: 10px 16px;
-  text-align: center;
-  color: #aeaeae;
-}
-.landing-page .pricing-plan .pricing-price span {
-  font-weight: 700;
-  font-size: 30px;
-  color: #13ce66;
-}
-.landing-page .pricing-title .label {
-  font-size: 12px;
-}
-.landing-page li.pricing-desc {
-  font-size: 13px;
-  border-top: none;
-  padding: 20px 16px 0px 16px;
-}
-.landing-page li.pricing-title {
-  color: #455463;
-  padding: 25px 10px 0px 10px;
-  border-radius: 4px 4px 0 0;
-  font-size: 22px;
-  font-weight: 600;
-}
-.landing-page .client {
-  color: #a7afb8;
-  background: #f9f9fa;
-  padding: 30px 10px;
-  margin: 0px 0 20px 0;
-  text-transform: uppercase;
-  font-weight: 600;
+  padding-bottom: 50px;
 }
 
-@media (max-width: 1200px) {
-  .landing-page .heading-image {
-    display: none;
-  }
-  .landing-page .heading {
-    text-align: center;
-  }
-  .landing-page .heading p.small {
-    margin: 10px auto;
-  }
-  .landing-page .brand-desc {
-    display: none;
-  }
-  .landing-page .navbar .navbar-brand {
-    margin-left: 10px;
-  }
+
+.hpanel.form-panel .panel-body, .hpanel.form-panel .panel-footer {
+  padding: 20px 30px;
+  border-color: #efefef;
 }
+
+
