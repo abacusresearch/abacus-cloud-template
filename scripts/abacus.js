@@ -22,6 +22,8 @@ $(document).ready(function () {
     // Initialize metsiMenu plugin to sidebar menu
     $('#side-menu').metisMenu();
 
+    $('#side-menu').find('li > .nav-second-level').parent('li').addClass('has-sub');
+
     // Initialize animate panel function
     $('.animate-panel').animatePanel();
 
@@ -103,7 +105,12 @@ $(document).ready(function () {
 
     // Move modal to body
     // Fix Bootstrap backdrop issu with animation.css
-    $('.modal').appendTo("body")
+    $('.modal').appendTo("body");
+
+    // change value for inputs with floating label
+    $('.floating-label-wrap .form-control').on('change', function() {
+        this.setAttribute("data-value", this.value);
+    });
 
 });
 
