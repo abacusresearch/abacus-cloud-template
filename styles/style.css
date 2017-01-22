@@ -3855,6 +3855,10 @@ ul.h-list li:hover a {
   }
 }
 
+.form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
+  margin-left: -20px;
+}
+
 /* form panels */
 
 .form-panel-container {
@@ -3879,9 +3883,11 @@ ul.h-list li:hover a {
   position: relative;
   display: inline-block;
   border-radius: 2px;
+  min-width: 150px;
 }
 .label-block {
   display: block;
+  margin-left: 24px;
 }
 .label.status-failed {
   background-color: #ff4136;
@@ -3900,6 +3906,12 @@ ul.h-list li:hover a {
 }
 .label.status-draft {
   background-color: #7c8998;  
+}
+
+.selection-checkbox {
+  float: left;
+  min-width: 30px;
+  position: relative;
 }
 
 
