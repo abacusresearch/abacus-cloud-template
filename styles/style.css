@@ -1468,6 +1468,7 @@ fieldset[disabled] .btn-link.active {
   font-size: 24px;
   line-height: 1.33;
 }
+
 /* Fonts */
 .font-light {
   font-weight: 200;
@@ -3223,10 +3224,11 @@ h6 {
   border: 0;
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-  padding: 13px;
+  padding: 11px;
   line-height: 1.25;
   font-size: 14px;
   color: #7c8998;
+  vertical-align: middle;
 }
 .table > thead > tr > th {
   padding: 15px;
@@ -3256,9 +3258,13 @@ h6 {
 .table-striped > tbody > tr:nth-of-type(even) {
   background-color: #f9f9fa;
 }
+.table-hover > tbody > tr {
+  transition: background-color .1s ease-out;
+}
 .table-hover > tbody > tr:hover {
   background-color: #f2f2f5;
 }
+
 
 table.dataTable {
   margin-bottom: 18px !important;
@@ -3286,6 +3292,42 @@ table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc:af
 .dataTables_length .form-control {
   width: 50px;
 }
+
+.datatable-action-padded {
+  padding-right: 40px !important;
+  position: relative;
+}
+
+.datatable-action {
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  z-index: 2;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.datatable-action.open {
+  z-index: 4;
+}
+
+.btn-circle.btn-datatable-action {
+  margin-right: 7px;
+  font-size: 20px;
+  line-height: 1;
+  padding: 0;
+  background-color: transparent;
+  color: #7c8998;
+  border-color: #7c8998;
+  opacity: 0;
+  transition: all .1s ease-out;
+}
+
+.table-hover > tbody > tr:hover .btn-circle.btn-datatable-action {
+  opacity: 1;
+}
+
 
 
 .no-padding table {
