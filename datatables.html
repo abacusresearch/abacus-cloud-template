@@ -34,7 +34,7 @@
 <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!-- Header -->
+<div class="boxed-wrapper"> <!-- Header -->
 <div id="header">
     <div id="logo" class="light-version">
         <span>
@@ -863,7 +863,7 @@
         // Initialize Example 2
         $('.example-datatable').dataTable({
             lengthMenu: [ [10, 25, 50, -1], [10, 25, 50, "All"] ],
-            dom: '<"col-lg-12"<"table-responsive"t>>' + '<"col-sm-4 col-xs-12"<"form-group"<"floating-label-wrap m-t-none"l>>>' + '<"col-sm-8 col-xs-12"p>',
+            dom: '<"col-lg-12"<"table-responsive"t>>' + '<"col-sm-6 col-xs-12"<"pull-left m-r-md"i><"form-group"<"floating-label-wrap m-t-none"l>>>' + '<"col-sm-6 col-xs-12"p>',
             // select: {
             //     items: 'rows',
             //     info: false

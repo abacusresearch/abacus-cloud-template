@@ -3218,6 +3218,7 @@ table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc:af
 
 .dataTables_length .form-control {
   width: 50px;
+  margin-left: 5px;
 }
 
 .datatable-action-padded {
