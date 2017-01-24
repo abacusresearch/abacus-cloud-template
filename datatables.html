@@ -216,7 +216,7 @@
                         </div>
                         <div class="col-lg-2 col-lg-offset-5 col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-1 col-xs-12">
                             <div class="floating-label-wrap m-t-none">
-                                <input type="text" class="form-control" data-value="">
+                                <input type="text" class="form-control table-filter" data-value="">
                                 <label>Filter</label>
                             </div>
                         </div>
@@ -885,7 +885,17 @@
             }]
         });
 
+        $('input.table-filter').on('keyup click', function() {
+            filterDataTable();
+        });
+
     });
+
+    function filterDataTable() {
+        $('.example-datatable').DataTable().search(
+            $('.table-filter').val()
+        ).draw();
+    }
 
 </script>
 
