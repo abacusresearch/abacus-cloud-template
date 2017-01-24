@@ -622,7 +622,7 @@ body.modal-open {
   font-size: 13px;
 }
 .vertical-date small {
-  color: #13ce66;
+  color: #1677cb;
   font-weight: 400;
 }
 .vertical-timeline-content:after,
@@ -3193,8 +3193,6 @@ h6 {
 .table-hover > tbody > tr:hover td {
   color: #2b2b2b;
 }
-
-
 table.dataTable {
   margin-bottom: 18px !important;
   border-collapse: collapse !important;
