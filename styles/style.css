@@ -2556,7 +2556,7 @@ body.page-small.show-sidebar #wrapper {
 }
 a {
   cursor: pointer;
-  color: #1677cb;
+  color: #2b2b2b;
 }
 a:hover,
 a:focus {
@@ -3853,11 +3853,11 @@ ul.h-list li:hover a {
   position: relative;
   display: inline-block;
   border-radius: 2px;
-  min-width: 150px;
 }
 .label-block {
   display: block;
   margin-left: 24px;
+  min-width: 110px;
 }
 .label.status-failed {
   background-color: #ff4136;

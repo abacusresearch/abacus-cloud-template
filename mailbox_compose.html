@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.css" />
     <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
     <link rel="stylesheet" href="bower_components/summernote/dist/summernote.css" />
     <link rel="stylesheet" href="bower_components/summernote/dist/summernote-bs3.css" />
 
@@ -88,13 +89,13 @@
                     <li><a href="icons.html">Icons library</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="active">
                 <a href="#"><span class="nav-label">App views</span><span class="fa arrow text-primary-2"></span> </a>
                 <ul class="nav nav-second-level">
                     <li><a href="projects.html">Projects</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="mailbox.html">Mailbox</a></li>
-<li><a href="mailbox_compose.html">Mail Compose</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="mailbox.html">Mailbox</a></li>
+<li class="active"><a href="mailbox_compose.html">Mail Compose</a></li>
 <li><a href="mailbox_view.html">Mail View</a></li>
                     <li><a href="file_manager.html">File Manager</a></li>
                 </ul>
@@ -133,12 +134,12 @@
                     <li><a href="datatables.html">Data tables</a></li>
                 </ul>
             </li>
-            <li class="active">
+            <li>
                 <a href="#"><span class="nav-label">Forms</span><span class="fa arrow text-primary-2"></span> </a>
                 <ul class="nav nav-second-level">
                     <li><a href="forms_elements.html">Forms elements</a></li>
                     <li><a href="forms_extended.html">Forms extended</a></li>
-                    <li class="active"><a href="text_editor.html">Text editor</a></li>
+                    <li><a href="text_editor.html">Text editor</a></li>
                     <li><a href="wizard.html">Wizard</a></li>
                     <li><a href="validation.html">Validation</a></li>
                 </ul>
@@ -158,35 +159,147 @@
     
     <div class="normalheader">
         <h2 class="m-b-xs">
-            Text editor
+            Mailbox
         </h2>
-        <small>Lorem Ipsum has been the dustrys</small>
+        <small>Mailbox - Email list.</small>
     </div>
 
-<div class="content">
+    <div class="content animate-panel">
 
-<div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="hpanel">
-                <div class="panel-heading">
-                    <div class="panel-tools">
-                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                        <a class="closebox"><i class="fa fa-times"></i></a>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="hpanel">
+                    <div class="panel-body">
+
+                        <a href="mailbox_compose.html" class="btn btn-primary btn-block m-b-md">Compose</a>
+
+                        <ul class="mailbox-list">
+                            <li>
+                                <a href="#">
+                                    <span class="pull-right">12</span>
+                                    <i class="fa fa-envelope"></i> Inbox
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-paper-plane"></i> Sent</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pencil"></i> Draft</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-trash"></i> Trash</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="mailbox-list">
+                            <li>
+                                <a href="#"><i class="fa fa-plane text-danger"></i> Travel</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-bar-chart text-warning"></i> Finance</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-users text-info"></i> Social</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-tag text-success"></i> Promos</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-flag text-primary"></i> Updates</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="mailbox-list">
+                            <li>
+                                <a href="#"><i class="fa fa-gears"></i> Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-info-circle"></i> Support</a>
+                            </li>
+                        </ul>
+
+
                     </div>
-                    Summernote with custom toolbar
+
                 </div>
-                <div class="panel-body">
-                    <div class="summernote1">
-                        <h4>It is a long established fact</h4>
-                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)</p><p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)with.</p>
+            </div>
+            <div class="col-md-9">
+                <div class="hpanel email-compose">
+                    <div class="panel-heading hbuilt">
+                        <div class="p-xs h4">
+
+                            New message
+
+                        </div>
+                    </div>
+                    <div class="panel-heading hbuilt">
+                        <div class="p-xs">
+
+                            <form method="get" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="floating-label-wrap">
+                                            <input type="text" class="form-control" data-value="">
+                                            <label>To:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="floating-label-wrap">
+                                            <input type="text" class="form-control" data-value="">
+                                            <label>CC:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <div class="floating-label-wrap">
+                                            <input type="text" class="form-control" data-value="">
+                                            <label>Subject:</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                    <div class="panel-body no-padding">
+                        <div class="summernote">
+                            <h5>Hello Jonathan! </h5>
+
+                            <p>dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the dustrys</strong> standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                <br/><br/>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                                recently with.</p>
+
+                            <p>Mark Smith
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="panel-footer">
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <button class="btn btn-default"><i class="fa fa-edit"></i> Save</button>
+                                <button class="btn btn-default"><i class="fa fa-trash"></i> Discard</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Send email</button>
+                        <div class="btn-group">
+                            <button class="btn btn-default"><i class="fa fa-paperclip"></i> </button>
+                            <button class="btn btn-default"><i class="fa fa-image"></i> </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-</div>
-    </div>
+
+  
 
     <!-- Footer-->
     <footer class="footer">
@@ -201,34 +314,25 @@
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-<script src="bower_components/sparkline/index.js"></script>
+<script src="bower_components/peity/jquery.peity.min.js"></script>
 <script src="bower_components/summernote/dist/summernote.min.js"></script>
+<script src="bower_components/sparkline/index.js"></script>
 
 <!-- App scripts -->
 <script src="scripts/abacus.js"></script>
-
 
 <script>
 
     $(function () {
 
         // Initialize summernote plugin
-        $('.summernote').summernote();
-
-        var sHTML = $('.summernote').code();
-
-        $('.summernote1').summernote({
+        $('.summernote').summernote({
             toolbar: [
                 ['headline', ['style']],
                 ['style', ['bold', 'italic', 'underline', 'superscript', 'subscript', 'strikethrough', 'clear']],
                 ['textsize', ['fontsize']],
                 ['alignment', ['ul', 'ol', 'paragraph', 'lineheight']],
             ]
-        });
-
-        $('.summernote2').summernote({
-            airMode: true,
         });
 
     });
