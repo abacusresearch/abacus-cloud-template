@@ -1,470 +1,303 @@
+<?php 
+    $filename = basename(__FILE__, '.php');
+    $pageName = ucwords(str_replace("_", " ", $filename));
+?>
+
 <!DOCTYPE html>
 <html>
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Page title -->
-    <title>Abacus Cloud Theme | Components Repository</title>
-
-    
-
-    <!-- Vendor styles -->
-    
-    
-    
-    
-    <link rel="stylesheet" href="bower_components/select2/select2.css" />
-    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" />
-    
-    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-
-    <!-- App styles -->
-    
-    <link rel="stylesheet" href="styles/select2-abacus.css">
-    <link rel="stylesheet" href="assets/css/application.css">
-
-
-</head>
+    <?php include('partials/head.php'); ?>
 <body class="fixed-navbar fixed-sidebar">
-
-<!--[if lt IE 7]>
-<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<div class="boxed-wrapper"> <!-- Header -->
-<div id="header">
-    <div id="logo" class="light-version">
-        <span>
-            Abacus Cloud Theme
-        </span>
-    </div>
-    <nav role="navigation">
-        <div class="header-link hide-menu hidden-sm hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
-        <div class="small-logo">
-            <span class="text-primary">Abacus Cloud Theme</span>
-        </div>
-        <div class="mobile-menu">
-            <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
-                <i class="fa fa-chevron-down"></i>
-            </button>
-            <div class="collapse mobile-navbar" id="mobile-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="" href="login.html">Login</a>
-                    </li>
-                    <li>
-                        <a class="" href="login.html">Logout</a>
-                    </li>
-                    <li>
-                        <a class="" href="profile.html">Profile</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="boxed-wrapper">
         
-    </nav>
-</div>
+        <?php include('partials/header.php'); ?>
+        <?php include('partials/navigation.php'); ?>
 
-<!-- Navigation -->
-<aside id="menu">
-    <div id="navigation">
-        <ul class="nav" id="side-menu">
-            <li>
-                <a href="index.html"><span class="nav-label">Dashboard</span></a>
-            </li>
-            <li>
-                <a href="analytics.html"> <span class="nav-label">Analytics</span> </a>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Interface</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="panels.html">Panels design</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                    <li><a href="buttons.html">Colors &amp; Buttons</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="alerts.html">Alerts</a></li>
-                    <li><a href="modals.html">Modals</a></li>
-                    <li><a href="icons.html">Icons library</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">App views</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="projects.html">Projects</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="mailbox.html">Mailbox</a></li>
-<li><a href="mailbox_compose.html">Mail Compose</a></li>
-<li><a href="mailbox_view.html">Mail View</a></li>
-                    <li><a href="file_manager.html">File Manager</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Charts</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="chartjs.html">ChartJs</a></li>
-                    <li><a href="flot.html">Flot charts</a></li>
-                    <li><a href="inline.html">Inline graphs</a></li>
-                    <li><a href="chartist.html">Chartist</a></li>
-                    <li><a href="c3.html">C3 Charts</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Box transitions</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="overview.html">Overview</a></li>
-                    <li><a href="transition_three.html">Panels zoom</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Common views</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="error_one.html">Error 404</a></li>
-                    <li><a href="error_two.html">Error 505</a></li>
-                    <li><a href="password_recovery.html">Passwor recovery</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Tables</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="tables_design.html">Tables design</a></li>
-                    <li><a href="datatables.html">Data tables</a></li>
-                </ul>
-            </li>
-            <li class="active">
-                <a href="#"><span class="nav-label">Forms</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="forms_elements.html">Forms elements</a></li>
-                    <li class="active"><a href="forms_extended.html">Forms extended</a></li>
-                    <li><a href="text_editor.html">Text editor</a></li>
-                    <li><a href="wizard.html">Wizard</a></li>
-                    <li><a href="validation.html">Validation</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="options.html"> <span class="nav-label">Layout options</span></a>
-            </li>
-            <li>
-                <a href="grid_system.html"> <span class="nav-label">Grid system</span></a>
-            </li>
-        </ul>
-    </div>
-</aside>
+        <div id="wrapper">
 
-<!-- Main Wrapper -->
-<div id="wrapper">
-    <div class="normalheader">
-        <h2 class="m-b-xs">
-            Forms extended
-        </h2>
-        <small>Examples of various extended form controls.</small>
-    </div>
-    
+            <?php include('partials/component_title.php'); ?>
 
-<div class="content animate-panel">
+            <div class="content animate-panel">
 
-    <div class="row">
+                <div class="row">
 
-        <div class="col-lg-12">
-            <div class="hpanel">
-                <div class="panel-heading">
-                    <div class="panel-tools">
-                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                        <a class="closebox"><i class="fa fa-times"></i></a>
-                    </div>
-                    Bootstrap datepicker
-                </div>
-                <div class="panel-body">
-
-                    <p>
-                        Bootstrap-datepicker provides a flexible datepicker widget in the Twitter bootstrap style.
-                        http://bootstrap-datepicker.readthedocs.org/en/latest/index.html
-                    </p>
-
-                    <div class="row">
-
-                        <div class="col-lg-3">
-                            <strong>
-                                Inline version
-                            </strong>
-
-                            <div id="datepicker" data-date="12/03/2012"></div>
-                            <input type="hidden" id="my_hidden_input"/>
-                        </div>
-                        <div class="col-lg-9">
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <h5>
-                                        Input
-                                    </h5>
-
-                                    <p>
-                                        The simplest case: focusing the input (clicking or tabbing into it) will show the picker.
-                                    </p>
-                                    <div class="form-group">
-                                        <div class="floating-label-wrap">
-                                            <input id="datapicker2" type="text"  data-value="" class="form-control">
-
-                                            <label>Date Label</label>
-
-                                        </div>
-                                    </div>
-                                    <h5>Component</h5>
-
-                                    <p>
-                                        Adding the date class to an input-group bootstrap component will allow the input-group-addon elements to trigger the picker.
-                                    </p>
-                                    <div class="form-group">
-                                        <div class="floating-label-wrap date">
-                                            <input id="datepicker-icon" type="text" class="form-control"  data-value="">
-                                            <label>Date Label</label>
-                                            <span class="input-group-addon"><i class="pe-7s-date"></i></span>
-                                        </div>
-                                        <div class="floating-label-wrap">
-                                            <input type="text" class="form-control"  data-value="">
-                                            <label>Some input</label>
-                                        </div>
-                                    </div>
+                    <div class="col-lg-12">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
                                 </div>
-                                <!-- <div class="col-md-6">
-                                    <h5>
-                                        Range
-                                    </h5>
+                                Bootstrap datepicker
+                            </div>
+                            <div class="panel-body">
 
-                                    <p>
-                                        Using the input-daterange construct with multiple child inputs will instantiate one picker per input and link them together to allow selecting ranges.
-                                    </p>
+                                <p>
+                                    Bootstrap-datepicker provides a flexible datepicker widget in the Twitter bootstrap style.
+                                    http://bootstrap-datepicker.readthedocs.org/en/latest/index.html
+                                </p>
 
-                                    <div class="input-daterange input-group" id="datepicker">
-                                        <input type="text" class="input-sm form-control" name="start"/>
-                                        <span class="input-group-addon">to</span>
-                                        <input type="text" class="input-sm form-control" name="end"/>
+                                <div class="row">
+
+                                    <div class="col-lg-3">
+                                        <strong>
+                                            Inline version
+                                        </strong>
+
+                                        <div id="datepicker" data-date="12/03/2012"></div>
+                                        <input type="hidden" id="my_hidden_input"/>
+                                    </div>
+                                    <div class="col-lg-9">
+
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <h5>
+                                                    Input
+                                                </h5>
+
+                                                <p>
+                                                    The simplest case: focusing the input (clicking or tabbing into it) will show the picker.
+                                                </p>
+                                                <div class="form-group">
+                                                    <div class="floating-label-wrap">
+                                                        <input id="datapicker2" type="text"  data-value="" class="form-control">
+
+                                                        <label>Date Label</label>
+
+                                                    </div>
+                                                </div>
+                                                <h5>Component</h5>
+
+                                                <p>
+                                                    Adding the date class to an input-group bootstrap component will allow the input-group-addon elements to trigger the picker.
+                                                </p>
+                                                <div class="form-group">
+                                                    <div class="floating-label-wrap date">
+                                                        <input id="datepicker-icon" type="text" class="form-control"  data-value="">
+                                                        <label>Date Label</label>
+                                                        <span class="input-group-addon"><i class="pe-7s-date"></i></span>
+                                                    </div>
+                                                    <div class="floating-label-wrap">
+                                                        <input type="text" class="form-control"  data-value="">
+                                                        <label>Some input</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-md-6">
+                                                <h5>
+                                                    Range
+                                                </h5>
+
+                                                <p>
+                                                    Using the input-daterange construct with multiple child inputs will instantiate one picker per input and link them together to allow selecting ranges.
+                                                </p>
+
+                                                <div class="input-daterange input-group" id="datepicker">
+                                                    <input type="text" class="input-sm form-control" name="start"/>
+                                                    <span class="input-group-addon">to</span>
+                                                    <input type="text" class="input-sm form-control" name="end"/>
+                                                </div>
+
+                                                <h5>Options</h5>
+
+                                                <p>
+                                                    There are many avalible options to datapicker, check: <a href="https://bootstrap-datepicker.readthedocs.org/en/latest/options.html" target="_blank">https://bootstrap-datepicker.readthedocs.org/en/latest/options.html</a>
+                                                </p>
+                                            </div> -->
+
+                                        </div>
+
+
                                     </div>
 
-                                    <h5>Options</h5>
+                                </div>
 
-                                    <p>
-                                        There are many avalible options to datapicker, check: <a href="https://bootstrap-datepicker.readthedocs.org/en/latest/options.html" target="_blank">https://bootstrap-datepicker.readthedocs.org/en/latest/options.html</a>
-                                    </p>
-                                </div> -->
 
                             </div>
-
-
                         </div>
 
                     </div>
-
-
                 </div>
-            </div>
+                <div class="row">
 
-        </div>
+                    <div class="col-lg-12">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
+                                </div>
+                                Awesome bootstrap checkbox
+                            </div>
+                            <div class="panel-body">
 
-    </div>
-    <div class="row">
-
-        <div class="col-lg-12">
-            <div class="hpanel">
-                <div class="panel-heading">
-                    <div class="panel-tools">
-                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                        <a class="closebox"><i class="fa fa-times"></i></a>
-                    </div>
-                    Awesome bootstrap checkbox
-                </div>
-                <div class="panel-body">
-
-                    <p>
-                        Font Awesome Bootstrap Checkboxes & Radios. Pure css way to make inputs look prettier.
-                        https://github.com/flatlogic/awesome-bootstrap-checkbox
-                    </p>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <fieldset>
-                                <legend>
-                                    Basic
-                                </legend>
                                 <p>
-                                    Supports bootstrap brand colors: <code>.checkbox-primary</code>, <code>.checkbox-info</code> etc.
-                                </p>
-                                <div class="checkbox">
-                                    <input id="checkbox1" type="checkbox">
-                                    <label for="checkbox1">
-                                        Default
-                                    </label>
-                                </div>
-                                <div class="checkbox checkbox-primary">
-                                    <input id="checkbox2" type="checkbox" checked="">
-                                    <label for="checkbox2">
-                                        Primary
-                                    </label>
-                                </div>
-                                <div class="checkbox checkbox-success">
-                                    <input id="checkbox3" type="checkbox">
-                                    <label for="checkbox3">
-                                        Success
-                                    </label>
-                                </div>
-                                <div class="checkbox checkbox-info">
-                                    <input id="checkbox4" type="checkbox">
-                                    <label for="checkbox4">
-                                        Info
-                                    </label>
-                                </div>
-                                <div class="checkbox checkbox-warning">
-                                    <input id="checkbox5" type="checkbox" checked="">
-                                    <label for="checkbox5">
-                                        Warning
-                                    </label>
-                                </div>
-                                <div class="checkbox checkbox-danger">
-                                    <input id="checkbox6" type="checkbox" checked="">
-                                    <label for="checkbox6">
-                                        Check me out
-                                    </label>
-                                </div>
-                                <p>Checkboxes without label text</p>
-                                <div class="checkbox">
-                                    <input type="checkbox" id="singleCheckbox1" value="option1" aria-label="Single checkbox One">
-                                    <label></label>
-                                </div>
-                                <div class="checkbox checkbox-primary">
-                                    <input type="checkbox" id="singleCheckbox2" value="option2" checked="" aria-label="Single checkbox Two">
-                                    <label></label>
-                                </div>
-                                <p>Inline checkboxes</p>
-                                <div class="checkbox checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label for="inlineCheckbox1"> Inline One </label>
-                                </div>
-                                <div class="checkbox checkbox-success checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
-                                    <label for="inlineCheckbox2"> Inline Two </label>
-                                </div>
-                                <div class="checkbox checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox3" value="option1">
-                                    <label for="inlineCheckbox3"> Inline Three </label>
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div class="col-md-4">
-                            <fieldset>
-                                <legend>
-                                    Circled
-                                </legend>
-                                <p>
-                                    <code>.checkbox-circle</code> for roundness.
-                                </p>
-                                <div class="checkbox checkbox-circle">
-                                    <input id="checkbox7" type="checkbox">
-                                    <label for="checkbox7">
-                                        Simply Rounded
-                                    </label>
-                                </div>
-                                <div class="checkbox checkbox-info checkbox-circle">
-                                    <input id="checkbox8" type="checkbox" checked="">
-                                    <label for="checkbox8">
-                                        Me too
-                                    </label>
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div class="col-md-4">
-                            <fieldset>
-                                <legend>
-                                    Radio
-                                </legend>
-                                <p>
-                                    Supports bootstrap brand colors: <code>.radio-primary</code>, <code>.radio-danger</code> etc.
+                                    Font Awesome Bootstrap Checkboxes & Radios. Pure css way to make inputs look prettier.
+                                    https://github.com/flatlogic/awesome-bootstrap-checkbox
                                 </p>
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="radio radio-primary">
-                                            <input type="radio" name="radio1" id="radio1" value="option1" checked="">
-                                            <label for="radio1">
-                                                Small
-                                            </label>
-                                        </div>
-                                        <div class="radio radio-primary">
-                                            <input type="radio" name="radio1" id="radio2" value="option2">
-                                            <label for="radio2">
-                                                Big
-                                            </label>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <fieldset>
+                                            <legend>
+                                                Basic
+                                            </legend>
+                                            <p>
+                                                Supports bootstrap brand colors: <code>.checkbox-primary</code>, <code>.checkbox-info</code> etc.
+                                            </p>
+                                            <div class="checkbox">
+                                                <input id="checkbox1" type="checkbox">
+                                                <label for="checkbox1">
+                                                    Default
+                                                </label>
+                                            </div>
+                                            <div class="checkbox checkbox-primary">
+                                                <input id="checkbox2" type="checkbox" checked="">
+                                                <label for="checkbox2">
+                                                    Primary
+                                                </label>
+                                            </div>
+                                            <div class="checkbox checkbox-success">
+                                                <input id="checkbox3" type="checkbox">
+                                                <label for="checkbox3">
+                                                    Success
+                                                </label>
+                                            </div>
+                                            <div class="checkbox checkbox-info">
+                                                <input id="checkbox4" type="checkbox">
+                                                <label for="checkbox4">
+                                                    Info
+                                                </label>
+                                            </div>
+                                            <div class="checkbox checkbox-warning">
+                                                <input id="checkbox5" type="checkbox" checked="">
+                                                <label for="checkbox5">
+                                                    Warning
+                                                </label>
+                                            </div>
+                                            <div class="checkbox checkbox-danger">
+                                                <input id="checkbox6" type="checkbox" checked="">
+                                                <label for="checkbox6">
+                                                    Check me out
+                                                </label>
+                                            </div>
+                                            <p>Checkboxes without label text</p>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="singleCheckbox1" value="option1" aria-label="Single checkbox One">
+                                                <label></label>
+                                            </div>
+                                            <div class="checkbox checkbox-primary">
+                                                <input type="checkbox" id="singleCheckbox2" value="option2" checked="" aria-label="Single checkbox Two">
+                                                <label></label>
+                                            </div>
+                                            <p>Inline checkboxes</p>
+                                            <div class="checkbox checkbox-inline">
+                                                <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label for="inlineCheckbox1"> Inline One </label>
+                                            </div>
+                                            <div class="checkbox checkbox-success checkbox-inline">
+                                                <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+                                                <label for="inlineCheckbox2"> Inline Two </label>
+                                            </div>
+                                            <div class="checkbox checkbox-inline">
+                                                <input type="checkbox" id="inlineCheckbox3" value="option1">
+                                                <label for="inlineCheckbox3"> Inline Three </label>
+                                            </div>
+                                        </fieldset>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="radio radio-danger">
-                                            <input type="radio" name="radio2" id="radio3" value="option1">
-                                            <label for="radio3">
-                                                Next
-                                            </label>
-                                        </div>
-                                        <div class="radio radio-danger">
-                                            <input type="radio" name="radio2" id="radio4" value="option2" checked="">
-                                            <label for="radio4">
-                                                One
-                                            </label>
-                                        </div>
+                                    <div class="col-md-4">
+                                        <fieldset>
+                                            <legend>
+                                                Circled
+                                            </legend>
+                                            <p>
+                                                <code>.checkbox-circle</code> for roundness.
+                                            </p>
+                                            <div class="checkbox checkbox-circle">
+                                                <input id="checkbox7" type="checkbox">
+                                                <label for="checkbox7">
+                                                    Simply Rounded
+                                                </label>
+                                            </div>
+                                            <div class="checkbox checkbox-info checkbox-circle">
+                                                <input id="checkbox8" type="checkbox" checked="">
+                                                <label for="checkbox8">
+                                                    Me too
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <fieldset>
+                                            <legend>
+                                                Radio
+                                            </legend>
+                                            <p>
+                                                Supports bootstrap brand colors: <code>.radio-primary</code>, <code>.radio-danger</code> etc.
+                                            </p>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="radio radio-primary">
+                                                        <input type="radio" name="radio1" id="radio1" value="option1" checked="">
+                                                        <label for="radio1">
+                                                            Small
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio radio-primary">
+                                                        <input type="radio" name="radio1" id="radio2" value="option2">
+                                                        <label for="radio2">
+                                                            Big
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="radio radio-danger">
+                                                        <input type="radio" name="radio2" id="radio3" value="option1">
+                                                        <label for="radio3">
+                                                            Next
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio radio-danger">
+                                                        <input type="radio" name="radio2" id="radio4" value="option2" checked="">
+                                                        <label for="radio4">
+                                                            One
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>Radios without label text</p>
+                                            <div class="radio">
+                                                <input type="radio" id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One">
+                                                <label></label>
+                                            </div>
+                                            <div class="radio radio-success">
+                                                <input type="radio" id="singleRadio2" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two">
+                                                <label></label>
+                                            </div>
+                                            <p>Inline radios</p>
+                                            <div class="radio radio-info radio-inline">
+                                                <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+                                                <label for="inlineRadio1"> Inline One </label>
+                                            </div>
+                                            <div class="radio radio-inline">
+                                                <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                                                <label for="inlineRadio2"> Inline Two </label>
+                                            </div>
+                                        </fieldset>
                                     </div>
                                 </div>
-                                <p>Radios without label text</p>
-                                <div class="radio">
-                                    <input type="radio" id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One">
-                                    <label></label>
-                                </div>
-                                <div class="radio radio-success">
-                                    <input type="radio" id="singleRadio2" value="option2" name="radioSingle1" checked="" aria-label="Single radio Two">
-                                    <label></label>
-                                </div>
-                                <p>Inline radios</p>
-                                <div class="radio radio-info radio-inline">
-                                    <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
-                                    <label for="inlineRadio1"> Inline One </label>
-                                </div>
-                                <div class="radio radio-inline">
-                                    <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
-                                    <label for="inlineRadio2"> Inline Two </label>
-                                </div>
-                            </fieldset>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
+
+            <?php include('partials/footer.php'); ?>
 
         </div>
 
     </div>
-
-</div>
-
-    <!-- Footer-->
-    <footer class="footer">
-        
-        ©2017 Abacus
-    </footer>
-
-</div>
-
-
-
-
-
-
-
-<script src="bower_components/moment/moment.js"></script>
-<script src="bower_components/select2/select2.min.js"></script>
-<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-
-<!-- App scripts -->
-<script src="assets/js/application.js"></script>
 
     <script>
 

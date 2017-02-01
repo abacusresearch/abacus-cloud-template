@@ -1,499 +1,342 @@
+<?php 
+    $filename = basename(__FILE__, '.php');
+    $pageName = ucwords(str_replace("_", " ", $filename));
+?>
+
 <!DOCTYPE html>
 <html>
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Page title -->
-    <title>Abacus Cloud Theme | Components Repository</title>
-
-    
-
-    <!-- Vendor styles -->
-    
-    
-    
-    
-
-    <!-- App styles -->
-    
-    <link rel="stylesheet" href="assets/css/application.css">
-
-</head>
+    <?php include('partials/head.php'); ?>
 <body class="fixed-navbar fixed-sidebar">
-
-<!--[if lt IE 7]>
-<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<div class="boxed-wrapper"> <!-- Header -->
-<div id="header">
-    <div id="logo" class="light-version">
-        <span>
-            Abacus Cloud Theme
-        </span>
-    </div>
-    <nav role="navigation">
-        <div class="header-link hide-menu hidden-sm hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
-        <div class="small-logo">
-            <span class="text-primary">Abacus Cloud Theme</span>
-        </div>
-        <div class="mobile-menu">
-            <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
-                <i class="fa fa-chevron-down"></i>
-            </button>
-            <div class="collapse mobile-navbar" id="mobile-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="" href="login.html">Login</a>
-                    </li>
-                    <li>
-                        <a class="" href="login.html">Logout</a>
-                    </li>
-                    <li>
-                        <a class="" href="profile.html">Profile</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="boxed-wrapper">
         
-    </nav>
-</div>
+        <?php include('partials/header.php'); ?>
+        <?php include('partials/navigation.php'); ?>
 
-<!-- Navigation -->
-<aside id="menu">
-    <div id="navigation">
-        <ul class="nav" id="side-menu">
-            <li>
-                <a href="index.html"><span class="nav-label">Dashboard</span></a>
-            </li>
-            <li>
-                <a href="analytics.html"> <span class="nav-label">Analytics</span> </a>
-            </li>
-            <li class="active">
-                <a href="#"><span class="nav-label">Interface</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="panels.html">Panels design</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                    <li><a href="buttons.html">Colors &amp; Buttons</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="alerts.html">Alerts</a></li>
-                    <li class="active"><a href="modals.html">Modals</a></li>
-                    <li><a href="icons.html">Icons library</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">App views</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="projects.html">Projects</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="mailbox.html">Mailbox</a></li>
-<li><a href="mailbox_compose.html">Mail Compose</a></li>
-<li><a href="mailbox_view.html">Mail View</a></li>
-                    <li><a href="file_manager.html">File Manager</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Charts</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="chartjs.html">ChartJs</a></li>
-                    <li><a href="flot.html">Flot charts</a></li>
-                    <li><a href="inline.html">Inline graphs</a></li>
-                    <li><a href="chartist.html">Chartist</a></li>
-                    <li><a href="c3.html">C3 Charts</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Box transitions</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="overview.html">Overview</a></li>
-                    <li><a href="transition_three.html">Panels zoom</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Common views</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="error_one.html">Error 404</a></li>
-                    <li><a href="error_two.html">Error 505</a></li>
-                    <li><a href="password_recovery.html">Passwor recovery</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Tables</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="tables_design.html">Tables design</a></li>
-                    <li><a href="datatables.html">Data tables</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Forms</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="forms_elements.html">Forms elements</a></li>
-                    <li><a href="forms_extended.html">Forms extended</a></li>
-                    <li><a href="text_editor.html">Text editor</a></li>
-                    <li><a href="wizard.html">Wizard</a></li>
-                    <li><a href="validation.html">Validation</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="options.html"> <span class="nav-label">Layout options</span></a>
-            </li>
-            <li>
-                <a href="grid_system.html"> <span class="nav-label">Grid system</span></a>
-            </li>
-        </ul>
-    </div>
-</aside>
+        <div id="wrapper">
 
-<!-- Main Wrapper -->
-<div id="wrapper">
+            <?php include('partials/component_title.php'); ?>
 
-    <div class="normalheader">
-        <h2 class="m-b-xs">
-            Modals
-        </h2>
-        <small>Modal window examples</small>
-    </div>
+            <div class="content animate-panel">
 
-<div class="content animate-panel">
-
-<div class="row">
-    <div class="col-lg-6">
-        <div class="hpanel">
-            <div class="panel-heading">
-                <div class="panel-tools">
-                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                    <a class="closebox"><i class="fa fa-times"></i></a>
-                </div>
-                Homer modal windows
-            </div>
-            <div class="panel-body">
-                <p>
-                    Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
-                </p>
-                <p>
-                    Modal contains title, content and footer
-                </p>
-                <div class="text-center">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                        Launch demo modal
-                    </button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalWithoutSub">
-                        Launch demo modal without subtitle
-                    </button>
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Modal title</h4>
-                                    <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
                                 </div>
-                                <div class="modal-body">
-                                    <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                        remaining essentially unchanged.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
+                                Homer modal windows
                             </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="myModalWithoutSub" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Modal title without subtitle</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                        remaining essentially unchanged.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="m-t-md">
-                    <pre>
-
-&lt;button type="button" class="btn btn-success"
-        data-toggle="modal" data-target="#myModal"&gt;
-        Launch demo modal
-&lt;/button&gt;
-                    </pre>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-6">
-        <div class="hpanel">
-            <div class="panel-heading">
-                <div class="panel-tools">
-                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                    <a class="closebox"><i class="fa fa-times"></i></a>
-                </div>
-                Optional size and colors
-            </div>
-            <div class="panel-body">
-                <p>
-                    Modals have two optional sizes, available via modifier classes to be placed on a .modal-dialog
-                </p>
-
-                <div class="text-center m-b-md">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#boxedModal">
-                        Boxed Modal
-                    </button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
-                        Small Modal
-                    </button>
-
-                    <div class="modal fade" id="boxedModal" tabindex="-1" role="dialog"  aria-hidden="true">
-                        <div class="modal-dialog modal-boxed">
-                            <div class="modal-content">
-                                
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Modal title</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-md-10 col-md-offset-1">
-                                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
+                            <div class="panel-body">
+                                <p>
+                                    Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
+                                </p>
+                                <p>
+                                    Modal contains title, content and footer
+                                </p>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                        Launch demo modal
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalWithoutSub">
+                                        Launch demo modal without subtitle
+                                    </button>
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Modal title</h4>
+                                                    <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                        remaining essentially unchanged.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="myModalWithoutSub" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Modal title without subtitle</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                        remaining essentially unchanged.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+
+                                <div class="m-t-md">
+                                    <pre>
+                                        &lt;button type="button" class="btn btn-success"
+                                                data-toggle="modal" data-target="#myModal"&gt;
+                                                Launch demo modal
+                                        &lt;/button&gt;
+                                    </pre>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog"  aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
-                                
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Modal title</h4>
-                                    <small class="font-bold">Lorem Ipsum is simply dummy text.</small>
+                    <div class="col-lg-6">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
                                 </div>
-                                <div class="modal-body">
-                                    <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                        remaining essentially unchanged.</p>
+                                Optional size and colors
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Modals have two optional sizes, available via modifier classes to be placed on a .modal-dialog
+                                </p>
+
+                                <div class="text-center m-b-md">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#boxedModal">
+                                        Boxed Modal
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+                                        Small Modal
+                                    </button>
+
+                                    <div class="modal fade" id="boxedModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                                        <div class="modal-dialog modal-boxed">
+                                            <div class="modal-content">
+                                                
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Modal title</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-10 col-md-offset-1">
+                                                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste distinctio, numquam magnam. Cumque a, eaque, ad porro ducimus provident deleniti temporibus maxime sint vitae eius maiores excepturi voluptatum consequuntur?</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog"  aria-hidden="true">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Modal title</h4>
+                                                    <small class="font-bold">Lorem Ipsum is simply dummy text.</small>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                        remaining essentially unchanged.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+
+                                <p>
+                                    You can add extra class to color your modal window avalible class (<code>hmodal-info</code>, <code>hmodal-warning</code>, <code>hmodal-success</code>, <code>hmodal-danger</code>)
+                                </p>
+                                <div class="text-center m-t-md">
+                                    <button class="btn btn-success" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal7">Success</button>
+                                    <button class="btn btn-info" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8">Info</button>
+                                    <button class="btn btn-warning" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9">Warning</button>
+                                    <button class="btn btn-danger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal10">Danger</button>
+                                </div>
+
+                                <div class="modal fade hmodal-success" id="myModal7" tabindex="-1" role="dialog"  aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Modal title</h4>
+                                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                    remaining essentially unchanged.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade hmodal-info" id="myModal8" tabindex="-1" role="dialog"  aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Modal title</h4>
+                                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                    remaining essentially unchanged.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade hmodal-warning" id="myModal9" tabindex="-1" role="dialog"  aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Modal title</h4>
+                                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                    remaining essentially unchanged.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade hmodal-danger" id="myModal10" tabindex="-1" role="dialog"  aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Modal title</h4>
+                                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                                    remaining essentially unchanged.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-t-md">
+                                    <pre>
+                                    var modalInstance = $modal.open({
+                                           templateUrl: 'views/modal/modal_example2.html',
+                                           controller: ModalInstanceCtrl,
+                                           windowClass: "hmodal-success"
+                                    }); </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
+                                </div>
+                                Options
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.
+                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th style="width: 100px;">Name</th>
+                                            <th style="width: 50px;">type</th>
+                                            <th style="width: 50px;">default</th>
+                                            <th>description</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>backdrop</td>
+                                            <td>boolean or the string <code>'static'</code></td>
+                                            <td>true</td>
+                                            <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>keyboard</td>
+                                            <td>boolean</td>
+                                            <td>true</td>
+                                            <td>Closes the modal when escape key is pressed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>show</td>
+                                            <td>boolean</td>
+                                            <td>true</td>
+                                            <td>Shows the modal when initialized.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>remote</td>
+                                            <td>path</td>
+                                            <td>false</td>
+                                            <td>
+                                                <p><strong class="text-danger">This option is deprecated since v3.3.0 and will be removed in v4.</strong> We recommend instead using client-side templating or a data binding framework, or calling <a href="http://api.jquery.com/load/">jQuery.load</a> yourself.</p>
+                                                <p>If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery's <code>load</code> method and injected into the <code>.modal-content</code> div. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>
+                                                <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">href=</span><span class="s">"remote.html"</span> <span class="na">data-target=</span><span class="s">"#modal"</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span></code></pre></div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <p>
-                    You can add extra class to color your modal window avalible class (<code>hmodal-info</code>, <code>hmodal-warning</code>, <code>hmodal-success</code>, <code>hmodal-danger</code>)
-                </p>
-                <div class="text-center m-t-md">
-                    <button class="btn btn-success" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal7">Success</button>
-                    <button class="btn btn-info" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8">Info</button>
-                    <button class="btn btn-warning" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9">Warning</button>
-                    <button class="btn btn-danger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal10">Danger</button>
-                </div>
-
-                <div class="modal fade hmodal-success" id="myModal7" tabindex="-1" role="dialog"  aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            
-                            <div class="modal-header">
-                                <h4 class="modal-title">Modal title</h4>
-                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-                            </div>
-                            <div class="modal-body">
-                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade hmodal-info" id="myModal8" tabindex="-1" role="dialog"  aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            
-                            <div class="modal-header">
-                                <h4 class="modal-title">Modal title</h4>
-                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-                            </div>
-                            <div class="modal-body">
-                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade hmodal-warning" id="myModal9" tabindex="-1" role="dialog"  aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            
-                            <div class="modal-header">
-                                <h4 class="modal-title">Modal title</h4>
-                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-                            </div>
-                            <div class="modal-body">
-                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal fade hmodal-danger" id="myModal10" tabindex="-1" role="dialog"  aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            
-                            <div class="modal-header">
-                                <h4 class="modal-title">Modal title</h4>
-                                <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
-                            </div>
-                            <div class="modal-body">
-                                <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                    remaining essentially unchanged.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="m-t-md">
-                    <pre>
-var modalInstance = $modal.open({
-       templateUrl: 'views/modal/modal_example2.html',
-       controller: ModalInstanceCtrl,
-       windowClass: "hmodal-success"
-}); </pre>
-                </div>
             </div>
+
+            <?php include('partials/footer.php'); ?>
+
         </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-12">
-        <div class="hpanel">
-            <div class="panel-heading">
-                <div class="panel-tools">
-                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                    <a class="closebox"><i class="fa fa-times"></i></a>
-                </div>
-                Options
-            </div>
-            <div class="panel-body">
-                <p>
-                    Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.
-                </p>
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                        <tr>
-                            <th style="width: 100px;">Name</th>
-                            <th style="width: 50px;">type</th>
-                            <th style="width: 50px;">default</th>
-                            <th>description</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>backdrop</td>
-                            <td>boolean or the string <code>'static'</code></td>
-                            <td>true</td>
-                            <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
-                        </tr>
-                        <tr>
-                            <td>keyboard</td>
-                            <td>boolean</td>
-                            <td>true</td>
-                            <td>Closes the modal when escape key is pressed</td>
-                        </tr>
-                        <tr>
-                            <td>show</td>
-                            <td>boolean</td>
-                            <td>true</td>
-                            <td>Shows the modal when initialized.</td>
-                        </tr>
-                        <tr>
-                            <td>remote</td>
-                            <td>path</td>
-                            <td>false</td>
-                            <td>
-                                <p><strong class="text-danger">This option is deprecated since v3.3.0 and will be removed in v4.</strong> We recommend instead using client-side templating or a data binding framework, or calling <a href="http://api.jquery.com/load/">jQuery.load</a> yourself.</p>
-                                <p>If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery's <code>load</code> method and injected into the <code>.modal-content</code> div. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>
-                                <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">href=</span><span class="s">"remote.html"</span> <span class="na">data-target=</span><span class="s">"#modal"</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span></code></pre></div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
     </div>
-
-    <!-- Footer-->
-    <footer class="footer">
-        
-        ©2017 Abacus
-    </footer>
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- App scripts -->
-<script src="assets/js/application.js"></script>
 
 </body>
 </html>

@@ -1,36 +1,17 @@
+<?php 
+    $filename = basename(__FILE__, '.php');
+    $pageName = ucwords(str_replace("_", " ", $filename));
+?>
+
 <!DOCTYPE html>
 <html>
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Page title -->
-    <title>Abacus Cloud Theme | Components Repository</title>
-
-    
-
-    <!-- Vendor styles -->
-    
-    
-    
-    
-    
-
-    <!-- App styles -->
-    
-    <link rel="stylesheet" href="assets/css/application.css">
-
-</head>
+    <?php include('partials/head.php'); ?>
 <body class="blank">
 
-<!--[if lt IE 7]>
-<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+
 
 <div class="back-link">
-    <a href="index.html" class="btn btn-primary">Back to Dashboard</a>
+    <a href="index.php" class="btn btn-primary">Back to Dashboard</a>
 </div>
 <div class="form-panel-container login-container">
     <div class="row">
@@ -135,15 +116,8 @@
 </div>
 
 
+<?php include('partials/footer.php'); ?>
 
-
-
-
-
-
-
-<!-- App scripts -->
-<script src="assets/js/application.js"></script>
 
 </body>
 </html>

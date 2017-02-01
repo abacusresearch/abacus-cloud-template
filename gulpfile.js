@@ -20,7 +20,7 @@ config.vendor = {
     'bower_components/jquery/dist/jquery.min.js',
     'bower_components/jquery-ui/jquery-ui.min.js',
     'bower_components/metisMenu/dist/metisMenu.min.js',
-    'bower_components/select2/select2.min.js"',
+    'bower_components/select2/select2.min.js',
     'bower_components/moment/min/moment.min.js',
     'bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js',
     'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
@@ -38,7 +38,13 @@ config.vendor = {
     'bower_components/chartist/dist/chartist.min.js',
     'bower_components/d3/d3.min.js',
     'bower_components/c3/c3.min.js',
-    'bower_components/Chart.js/Chart.js'
+    'bower_components/Chart.js/Chart.js',
+    'bower_components/datatables.net/js/jquery.dataTables.min.js',
+    'bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js',
+    'bower_components/datatables.net-buttons/js/buttons.html5.min.js',
+    'bower_components/datatables.net-buttons/js/buttons.print.min.js',
+    'bower_components/datatables.net-buttons/js/dataTables.buttons.min.js',
+    'bower_components/datatables.net-buttons-bs/js/buttons.bootstrap.min.js'
   ],
   'css': [
     'bower_components/animate.css/animate.css',
@@ -49,7 +55,7 @@ config.vendor = {
     'bower_components/summernote/dist/summernote.css',
     'bower_components/summernote/dist/summernote-bs3.css',
     'bower_components/metisMenu/dist/metisMenu.css',
-    'bower_components/select2/dist/css/select2.min.css',
+    'bower_components/select2/select2.css',
     'bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css',
     'bower_components/toastr/toastr.min.css',
     'bower_components/c3/c3.min.css'

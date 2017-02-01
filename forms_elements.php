@@ -1,434 +1,273 @@
+<?php 
+    $filename = basename(__FILE__, '.php');
+    $pageName = ucwords(str_replace("_", " ", $filename));
+?>
+
 <!DOCTYPE html>
 <html>
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Page title -->
-    <title>Abacus Cloud Theme | Components Repository</title>
-
-    
-
-    <!-- Vendor styles -->
-    
-    
-    
-    
-    <link rel="stylesheet" href="bower_components/select2/select2.css" />
-
-    <!-- App styles -->
-    
-    <link rel="stylesheet" href="styles/select2-abacus.css">
-    <link rel="stylesheet" href="assets/css/application.css">
-
-</head>
+    <?php include('partials/head.php'); ?>
 <body class="fixed-navbar fixed-sidebar">
-
-<!--[if lt IE 7]>
-<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<div class="boxed-wrapper"> <!-- Header -->
-<div id="header">
-    <div id="logo" class="light-version">
-        <span>
-            Abacus Cloud Theme
-        </span>
-    </div>
-    <nav role="navigation">
-        <div class="header-link hide-menu hidden-sm hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
-        <div class="small-logo">
-            <span class="text-primary">Abacus Cloud Theme</span>
-        </div>
-        <div class="mobile-menu">
-            <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
-                <i class="fa fa-chevron-down"></i>
-            </button>
-            <div class="collapse mobile-navbar" id="mobile-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="" href="login.html">Login</a>
-                    </li>
-                    <li>
-                        <a class="" href="login.html">Logout</a>
-                    </li>
-                    <li>
-                        <a class="" href="profile.html">Profile</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="boxed-wrapper">
         
-    </nav>
-</div>
+        <?php include('partials/header.php'); ?>
+        <?php include('partials/navigation.php'); ?>
 
-<!-- Navigation -->
-<aside id="menu">
-    <div id="navigation">
-        <ul class="nav" id="side-menu">
-            <li>
-                <a href="index.html"><span class="nav-label">Dashboard</span></a>
-            </li>
-            <li>
-                <a href="analytics.html"> <span class="nav-label">Analytics</span> </a>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Interface</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="panels.html">Panels design</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                    <li><a href="buttons.html">Colors &amp; Buttons</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="alerts.html">Alerts</a></li>
-                    <li><a href="modals.html">Modals</a></li>
-                    <li><a href="icons.html">Icons library</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">App views</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="projects.html">Projects</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="mailbox.html">Mailbox</a></li>
-<li><a href="mailbox_compose.html">Mail Compose</a></li>
-<li><a href="mailbox_view.html">Mail View</a></li>
-                    <li><a href="file_manager.html">File Manager</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Charts</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="chartjs.html">ChartJs</a></li>
-                    <li><a href="flot.html">Flot charts</a></li>
-                    <li><a href="inline.html">Inline graphs</a></li>
-                    <li><a href="chartist.html">Chartist</a></li>
-                    <li><a href="c3.html">C3 Charts</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Box transitions</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="overview.html">Overview</a></li>
-                    <li><a href="transition_three.html">Panels zoom</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Common views</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="error_one.html">Error 404</a></li>
-                    <li><a href="error_two.html">Error 505</a></li>
-                    <li><a href="password_recovery.html">Passwor recovery</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Tables</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="tables_design.html">Tables design</a></li>
-                    <li><a href="datatables.html">Data tables</a></li>
-                </ul>
-            </li>
-            <li class="active">
-                <a href="#"><span class="nav-label">Forms</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li class="active"><a href="forms_elements.html">Forms elements</a></li>
-                    <li><a href="forms_extended.html">Forms extended</a></li>
-                    <li><a href="text_editor.html">Text editor</a></li>
-                    <li><a href="wizard.html">Wizard</a></li>
-                    <li><a href="validation.html">Validation</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="options.html"> <span class="nav-label">Layout options</span></a>
-            </li>
-            <li>
-                <a href="grid_system.html"> <span class="nav-label">Grid system</span></a>
-            </li>
-        </ul>
-    </div>
-</aside>
+        <div id="wrapper">
 
-<!-- Main Wrapper -->
-<div id="wrapper">
+            <?php include('partials/component_title.php'); ?>
 
-    <div class="normalheader">
-        <h2 class="m-b-xs">
-            Forms elements
-        </h2>
-        <small>Examples of various form controls.</small>
-    </div>
+            <div class="content animate-panel">
 
-<div class="content animate-panel">
-
-<div>
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="hpanel">
-                <div class="panel-body">
-                    <h3>Forms</h3>
-                    <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="hpanel">
-                <div class="panel-heading">
-                    <div class="panel-tools">
-                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                        <a class="closebox"><i class="fa fa-times"></i></a>
-                    </div>
-                    Basic elements
-                </div>
-                <div class="panel-body">
-                <form method="get" class="form-horizontal">
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <div class="floating-label-wrap">
-                            <input type="text" class="form-control" data-value="">
-                            <label>Placeholder</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
+                <div class="row">
                     <div class="col-lg-12">
-                        <div class="floating-label-wrap">
-                            <input type="text" disabled="" class="form-control" data-value="">
-                            <label>Disabled input here...</label>
+                        <div class="hpanel">
+                            <div class="panel-body">
+                                <h3>Forms</h3>
+                                <p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    
-                    <div class="col-lg-10">
-                        <div class="floating-label-wrap">
-                            <p class="form-control form-control-static">email@example.com</p>
-                            <label>Static Control</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <div class="floating-label-wrap">
-                            <textarea type="text" class="form-control" data-value=""></textarea>
-                            <label>Textarea Example</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hr-line-dashed"></div>
-
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="floating-label-wrap">
-                                    <input type="text" class="form-control" data-value="">
-                                    <label>.col-md-3</label>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
+                                </div>
+                                Basic elements
+                            </div>
+                            <div class="panel-body">
+                            <form method="get" class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="floating-label-wrap">
+                                        <input type="text" class="form-control" data-value="">
+                                        <label>Placeholder</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="floating-label-wrap">
-                                    <input type="text" class="form-control" data-value="">
-                                    <label>.col-md-4</label>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <div class="floating-label-wrap">
+                                        <input type="text" disabled="" class="form-control" data-value="">
+                                        <label>Disabled input here...</label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-5">
-                                <div class="floating-label-wrap">
-                                    <input type="text" class="form-control" data-value="">
-                                    <label>.col-md-5</label>
+                            <div class="form-group">
+                                
+                                <div class="col-lg-10">
+                                    <div class="floating-label-wrap">
+                                        <p class="form-control form-control-static">email@example.com</p>
+                                        <label>Static Control</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="form-group">
-                    <div class="col-lg-12">
-                        <div class="floating-label-wrap">
-                            <input type="text" class="form-control" data-value="">
-                            <label>With dropdowns</label>
-                            <div class="input-group-btn">
-                                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><span class="caret"></span></button>
-                                <ul class="dropdown-menu with-arrow pull-right">
-                                    <li><a href="">Action</a></li>
-                                    <li><a href="">Another action</a></li>
-                                    <li><a href="">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="">Separated link</a></li>
-                                </ul>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="floating-label-wrap">
+                                        <textarea type="text" class="form-control" data-value=""></textarea>
+                                        <label>Textarea Example</label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div> -->
-                
-                <div class="hr-line-dashed"></div>
-
-                <div class="form-group text-right">
-                    <div class="col-sm-12">
-                        <button class="btn btn-default" type="submit">Cancel</button>
-                        <button class="btn btn-primary" type="submit">Save changes</button>
-                    </div>
-                </div>
-
-                </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="hpanel">
-                <div class="panel-heading">
-                    <div class="panel-tools">
-                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                        <a class="closebox"><i class="fa fa-times"></i></a>
-                    </div>
-                    Select2
-                </div>
-                <div class="panel-body">
-
-                    <p>
-                        <strong>Select2</strong> Select2 gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.
-                    </p>
-
-                    <h5>Bootstrap theme with Select 2 - basic example</h5>
-                    <div class="form-group">
-                        <div class="floating-label-wrap">
-                            <select class="form-control" style="width: 100%" data-value="">
-                                <option value=""></option>
-                                <optgroup label="Alaskan/Hawaiian Time Zone">
-                                    <option value="AK">Alaska</option>
-                                    <option value="HI">Hawaii</option>
-                                </optgroup>
-                                <optgroup label="Pacific Time Zone">
-                                    <option value="CA">California</option>
-                                    <option value="NV">Nevada</option>
-                                    <option value="OR">Oregon</option>
-                                    <option value="WA">Washington</option>
-                                </optgroup>
-                                <optgroup label="Mountain Time Zone">
-                                    <option value="AZ">Arizona</option>
-                                    <option value="CO">Colorado</option>
-                                    <option value="ID">Idaho</option>
-                                    <option value="MT">Montana</option>
-                                    <option value="NE">Nebraska</option>
-                                    <option value="NM">New Mexico</option>
-                                    <option value="ND">North Dakota</option>
-                                    <option value="UT">Utah</option>
-                                    <option value="WY">Wyoming</option>
-                                </optgroup>
-                                <optgroup label="Central Time Zone">
-                                    <option value="AL">Alabama</option>
-                                    <option value="AR">Arkansas</option>
-                                    <option value="IL">Illinois</option>
-                                    <option value="IA">Iowa</option>
-                                    <option value="KS">Kansas</option>
-                                    <option value="KY">Kentucky</option>
-                                    <option value="LA">Louisiana</option>
-                                    <option value="MN">Minnesota</option>
-                                    <option value="MS">Mississippi</option>
-                                    <option value="MO">Missouri</option>
-                                    <option value="OK">Oklahoma</option>
-                                    <option value="SD">South Dakota</option>
-                                    <option value="TX">Texas</option>
-                                    <option value="TN">Tennessee</option>
-                                    <option value="WI">Wisconsin</option>
-                                </optgroup>
-                                <optgroup label="Eastern Time Zone">
-                                    <option value="CT">Connecticut</option>
-                                    <option value="DE">Delaware</option>
-                                    <option value="FL">Florida</option>
-                                    <option value="GA">Georgia</option>
-                                    <option value="IN">Indiana</option>
-                                    <option value="ME">Maine</option>
-                                    <option value="MD">Maryland</option>
-                                    <option value="MA">Massachusetts</option>
-                                    <option value="MI">Michigan</option>
-                                    <option value="NH">New Hampshire</option>
-                                    <option value="NJ">New Jersey</option>
-                                    <option value="NY">New York</option>
-                                    <option value="NC">North Carolina</option>
-                                    <option value="OH">Ohio</option>
-                                    <option value="PA">Pennsylvania</option>
-                                    <option value="RI">Rhode Island</option>
-                                    <option value="SC">South Carolina</option>
-                                    <option value="VT">Vermont</option>
-                                    <option value="VA">Virginia</option>
-                                    <option value="WV">West Virginia</option>
-                                </optgroup>
-                            </select>
                             
-                            <label>Select Floating Label</label>
-                        </div>
-                    </div>
+                            <div class="hr-line-dashed"></div>
 
-                </div>
-            </div>
-
-
-
-            <div class="hpanel">
-                <div class="panel-heading">
-                    <div class="panel-tools">
-                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                        <a class="closebox"><i class="fa fa-times"></i></a>
-                    </div>
-                    Form example
-                </div>
-                <div class="panel-body">
-                    <form method="get" class="form-horizontal">
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <div class="floating-label-wrap">
-                                    <input type="text" class="form-control" data-value="">
-                                    <label>Normal</label>
-                                </div>
-                                <div class="floating-label-wrap">
-                                    <input type="text" class="form-control" data-value="">
-                                    <label>Help text</label>
-                                    <span class="help-block m-b-none">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-                                </div>
-                                <div class="floating-label-wrap">
-                                    <input type="password" class="form-control" name="password" data-value="">
-                                    <label>Password</label>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="floating-label-wrap">
+                                                <input type="text" class="form-control" data-value="">
+                                                <label>.col-md-3</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="floating-label-wrap">
+                                                <input type="text" class="form-control" data-value="">
+                                                <label>.col-md-4</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="floating-label-wrap">
+                                                <input type="text" class="form-control" data-value="">
+                                                <label>.col-md-5</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- <div class="form-group">
+                                <div class="col-lg-12">
+                                    <div class="floating-label-wrap">
+                                        <input type="text" class="form-control" data-value="">
+                                        <label>With dropdowns</label>
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+                                            <ul class="dropdown-menu with-arrow pull-right">
+                                                <li><a href="">Action</a></li>
+                                                <li><a href="">Another action</a></li>
+                                                <li><a href="">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group text-right">
+                                <div class="col-sm-12">
+                                    <button class="btn btn-default" type="submit">Cancel</button>
+                                    <button class="btn btn-primary" type="submit">Save changes</button>
+                                </div>
+                            </div>
+
+                            </form>
+                            </div>
                         </div>
-                    </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
+                                </div>
+                                Select2
+                            </div>
+                            <div class="panel-body">
+
+                                <p>
+                                    <strong>Select2</strong> Select2 gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.
+                                </p>
+
+                                <h5>Bootstrap theme with Select 2 - basic example</h5>
+                                <div class="form-group">
+                                    <div class="floating-label-wrap">
+                                        <select class="form-control" style="width: 100%" data-value="">
+                                            <option value=""></option>
+                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                            </optgroup>
+                                            <optgroup label="Pacific Time Zone">
+                                                <option value="CA">California</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="WA">Washington</option>
+                                            </optgroup>
+                                            <optgroup label="Mountain Time Zone">
+                                                <option value="AZ">Arizona</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="WY">Wyoming</option>
+                                            </optgroup>
+                                            <optgroup label="Central Time Zone">
+                                                <option value="AL">Alabama</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="WI">Wisconsin</option>
+                                            </optgroup>
+                                            <optgroup label="Eastern Time Zone">
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WV">West Virginia</option>
+                                            </optgroup>
+                                        </select>
+                                        
+                                        <label>Select Floating Label</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="hpanel">
+                            <div class="panel-heading">
+                                <div class="panel-tools">
+                                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                                    <a class="closebox"><i class="fa fa-times"></i></a>
+                                </div>
+                                Form example
+                            </div>
+                            <div class="panel-body">
+                                <form method="get" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div class="col-lg-12">
+                                            <div class="floating-label-wrap">
+                                                <input type="text" class="form-control" data-value="">
+                                                <label>Normal</label>
+                                            </div>
+                                            <div class="floating-label-wrap">
+                                                <input type="text" class="form-control" data-value="">
+                                                <label>Help text</label>
+                                                <span class="help-block m-b-none">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                                            </div>
+                                            <div class="floating-label-wrap">
+                                                <input type="password" class="form-control" name="password" data-value="">
+                                                <label>Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
+            <?php include('partials/footer.php'); ?>
+
         </div>
+
     </div>
-</div>
 
-</div>
-
-    <!-- Footer-->
-    <footer class="footer">
-        
-        ©2017 Abacus
-    </footer>
-
-</div>
-
-
-
-
-
-
-<script src="bower_components/select2/select2.min.js"></script>
-
-
-
-<!-- App scripts -->
-<script src="assets/js/application.js"></script>
-
-<script>
-    $("select.form-control").select2();
-</script>
+    <script>
+        $("select.form-control").select2();
+    </script>
 
 </body>
 </html>

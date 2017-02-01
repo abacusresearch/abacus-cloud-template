@@ -1,528 +1,374 @@
+<?php 
+    $filename = basename(__FILE__, '.php');
+    $pageName = ucwords(str_replace("_", " ", $filename));
+?>
+
 <!DOCTYPE html>
 <html>
-<head>
+<?php include('partials/head.php'); ?>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Page title -->
-    <title>Abacus Cloud Theme | Components Repository</title>
-
-    
-
-    <!-- Vendor styles -->
-    
-    
-    
-    
-
-    <!-- App styles -->
-    
-    <link rel="stylesheet" href="assets/css/application.css">
-
-</head>
 <body class="fixed-navbar fixed-sidebar">
+    <div class="boxed-wrapper">
 
-<!--[if lt IE 7]>
-<p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+        <?php include('partials/header.php'); ?>
+        <?php include('partials/navigation.php'); ?>
 
-<div class="boxed-wrapper"> <!-- Header -->
-<div id="header">
-    <div id="logo" class="light-version">
-        <span>
-            Abacus Cloud Theme
-        </span>
-    </div>
-    <nav role="navigation">
-        <div class="header-link hide-menu hidden-sm hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
-        <div class="small-logo">
-            <span class="text-primary">Abacus Cloud Theme</span>
-        </div>
-        <div class="mobile-menu">
-            <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
-                <i class="fa fa-chevron-down"></i>
-            </button>
-            <div class="collapse mobile-navbar" id="mobile-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="" href="login.html">Login</a>
-                    </li>
-                    <li>
-                        <a class="" href="login.html">Logout</a>
-                    </li>
-                    <li>
-                        <a class="" href="profile.html">Profile</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-    </nav>
-</div>
+        <div id="wrapper">
 
-<!-- Navigation -->
-<aside id="menu">
-    <div id="navigation">
-        <ul class="nav" id="side-menu">
-            <li>
-                <a href="index.html"><span class="nav-label">Dashboard</span></a>
-            </li>
-            <li>
-                <a href="analytics.html"> <span class="nav-label">Analytics</span> </a>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Interface</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="panels.html">Panels design</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                    <li><a href="buttons.html">Colors &amp; Buttons</a></li>
-                    <li><a href="components.html">Components</a></li>
-                    <li><a href="alerts.html">Alerts</a></li>
-                    <li><a href="modals.html">Modals</a></li>
-                    <li><a href="icons.html">Icons library</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">App views</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="projects.html">Projects</a></li>
-<li><a href="timeline.html">Timeline</a></li>
-<li><a href="mailbox.html">Mailbox</a></li>
-<li><a href="mailbox_compose.html">Mail Compose</a></li>
-<li><a href="mailbox_view.html">Mail View</a></li>
-                    <li><a href="file_manager.html">File Manager</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Charts</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="chartjs.html">ChartJs</a></li>
-                    <li><a href="flot.html">Flot charts</a></li>
-                    <li><a href="inline.html">Inline graphs</a></li>
-                    <li><a href="chartist.html">Chartist</a></li>
-                    <li><a href="c3.html">C3 Charts</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Box transitions</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="overview.html">Overview</a></li>
-                    <li><a href="transition_three.html">Panels zoom</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Common views</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="error_one.html">Error 404</a></li>
-                    <li><a href="error_two.html">Error 505</a></li>
-                    <li><a href="password_recovery.html">Passwor recovery</a></li>
-                </ul>
-            </li>
-            <li class="active">
-                <a href="#"><span class="nav-label">Tables</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li class="active"><a href="tables_design.html">Tables design</a></li>
-                    <li><a href="datatables.html">Data tables</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"><span class="nav-label">Forms</span><span class="fa arrow text-primary-2"></span> </a>
-                <ul class="nav nav-second-level">
-                    <li><a href="forms_elements.html">Forms elements</a></li>
-                    <li><a href="forms_extended.html">Forms extended</a></li>
-                    <li><a href="text_editor.html">Text editor</a></li>
-                    <li><a href="wizard.html">Wizard</a></li>
-                    <li><a href="validation.html">Validation</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="options.html"> <span class="nav-label">Layout options</span></a>
-            </li>
-            <li>
-                <a href="grid_system.html"> <span class="nav-label">Grid system</span></a>
-            </li>
-        </ul>
-    </div>
-</aside>
+            <?php include('partials/component_title.php'); ?>
 
-<!-- Main Wrapper -->
-<div id="wrapper">
+            <div class="content animate-panel">
 
-    <div class="normalheader">
-        <h2 class="m-b-xs">
-            Tables design
-        </h2>
-        <small>Examples of various designs of tables.</small>
-    </div>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="hpanel">
+                      <div class="panel-heading">
+                        <div class="panel-tools">
+                          <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                          <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        This is a basic table design
+                      </div>
+                      <div class="panel-body">
+                        <div class="table-responsive">
+                          <table cellpadding="1" cellspacing="1" class="table">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Street Address</th>
+                                <th>City</th>
+                                <th>Country</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Abraham</td>
+                                <td>076 9477 4896</td>
+                                <td>294-318 Duis Ave</td>
+                                <td>Vosselaar</td>
+                                <td>Belgium</td>
+                              </tr>
+                              <tr>
+                                <td>Phelan</td>
+                                <td>0500 034548</td>
+                                <td>680-1097 Mi Rd.</td>
+                                <td>Lavoir</td>
+                                <td>Pakistan</td>
+                              </tr>
+                              <tr>
+                                <td>Raya</td>
+                                <td>(01315) 27698</td>
+                                <td>Ap #289-8161 In Avenue</td>
+                                <td>Santomenna</td>
+                                <td>Burkina Faso</td>
+                              </tr>
+                              <tr>
+                                <td>Azalia</td>
+                                <td>0500 854198</td>
+                                <td>226-4861 Augue. St.</td>
+                                <td>Newtown</td>
+                                <td>Christmas Island</td>
+                              </tr>
+                              <tr>
+                                <td>Garth</td>
+                                <td>(01662) 59083</td>
+                                <td>3219 Elit Avenue</td>
+                                <td>Ternitz</td>
+                                <td>Saint Martin</td>
+                              </tr>
+                              <tr>
+                                <td>Selma</td>
+                                <td>0877 118 6905</td>
+                                <td>P.O. Box 410, 7331 Nec, St.</td>
+                                <td>Glenrothes</td>
+                                <td>Korea, North</td>
+                              </tr>
+                            </tbody>
 
-<div class="content animate-panel">
+                          </table>
+                        </div>
 
-<div class="row">
-    <div class="col-lg-8">
-        <div class="hpanel">
-            <div class="panel-heading">
-                <div class="panel-tools">
-                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                    <a class="closebox"><i class="fa fa-times"></i></a>
-                </div>
-                This is a basic table design
-            </div>
-            <div class="panel-body">
-                <div class="table-responsive">
-                <table cellpadding="1" cellspacing="1" class="table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Phone</th>
-                            <th>Street Address</th>
-                            <th>City</th>
-                            <th>Country</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Abraham</td>
-                            <td>076 9477 4896</td>
-                            <td>294-318 Duis Ave</td>
-                            <td>Vosselaar</td>
-                            <td>Belgium</td>
-                        </tr>
-                        <tr>
-                            <td>Phelan</td>
-                            <td>0500 034548</td>
-                            <td>680-1097 Mi Rd.</td>
-                            <td>Lavoir</td>
-                            <td>Pakistan</td>
-                        </tr>
-                        <tr>
-                            <td>Raya</td>
-                            <td>(01315) 27698</td>
-                            <td>Ap #289-8161 In Avenue</td>
-                            <td>Santomenna</td>
-                            <td>Burkina Faso</td>
-                        </tr>
-                        <tr>
-                            <td>Azalia</td>
-                            <td>0500 854198</td>
-                            <td>226-4861 Augue. St.</td>
-                            <td>Newtown</td>
-                            <td>Christmas Island</td>
-                        </tr>
-                        <tr>
-                            <td>Garth</td>
-                            <td>(01662) 59083</td>
-                            <td>3219 Elit Avenue</td>
-                            <td>Ternitz</td>
-                            <td>Saint Martin</td>
-                        </tr>
-                        <tr>
-                            <td>Selma</td>
-                            <td>0877 118 6905</td>
-                            <td>P.O. Box 410, 7331 Nec, St.</td>
-                            <td>Glenrothes</td>
-                            <td>Korea, North</td>
-                        </tr>
-                    </tbody>
-
-                </table>
-                </div>
-
-            </div>
-            <div class="panel-footer">
-                Table - 6 rows
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4">
-        <div class="hpanel">
-            <div class="panel-heading">
-                <div class="panel-tools">
-                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                    <a class="closebox"><i class="fa fa-times"></i></a>
-                </div>
-                This is a condensed basic table
-            </div>
-            <div class="panel-body">
-                <div class="table-responsive">
-                <table cellpadding="1" cellspacing="1" class="table table-condensed">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Street</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Henry</td>
-                        <td>Purus Gravida Sagittis Limited</td>
-                        <td>055 1753 4032</td>
-                    </tr>
-                    <tr>
-                        <td>Shelly</td>
-                        <td>Posuere Enim Inc.</td>
-                        <td>0313 143 2317</td>
-                    </tr>
-                    <tr>
-                        <td>Edan</td>
-                        <td>Quisque Imperdiet Company</td>
-                        <td>076 1743 8649</td>
-                    </tr>
-                    <tr>
-                        <td>Sophia</td>
-                        <td>Quam Incorporated</td>
-                        <td>0863 826 7513</td>
-                    </tr>
-                    <tr>
-                        <td>Griffith</td>
-                        <td>Tempor Erat Corp.</td>
-                        <td>0845 46 45</td>
-                    </tr>
-
-                    </tbody>
-                </table>
+                      </div>
+                      <div class="panel-footer">
+                        Table - 6 rows
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="hpanel">
+                      <div class="panel-heading">
+                        <div class="panel-tools">
+                          <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                          <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        This is a condensed basic table
+                      </div>
+                      <div class="panel-body">
+                        <div class="table-responsive">
+                          <table cellpadding="1" cellspacing="1" class="table table-condensed">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Street</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Henry</td>
+                                <td>Purus Gravida Sagittis Limited</td>
+                                <td>055 1753 4032</td>
+                              </tr>
+                              <tr>
+                                <td>Shelly</td>
+                                <td>Posuere Enim Inc.</td>
+                                <td>0313 143 2317</td>
+                              </tr>
+                              <tr>
+                                <td>Edan</td>
+                                <td>Quisque Imperdiet Company</td>
+                                <td>076 1743 8649</td>
+                              </tr>
+                              <tr>
+                                <td>Sophia</td>
+                                <td>Quam Incorporated</td>
+                                <td>0863 826 7513</td>
+                              </tr>
+                              <tr>
+                                <td>Griffith</td>
+                                <td>Tempor Erat Corp.</td>
+                                <td>0845 46 45</td>
+                              </tr>
 
-            </div>
-            <div class="panel-footer">
-                Table - 5 rows
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-4">
-        <div class="hpanel">
-            <div class="panel-heading">
-                <div class="panel-tools">
-                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                    <a class="closebox"><i class="fa fa-times"></i></a>
+                            </tbody>
+                          </table>
+                        </div>
+
+                      </div>
+                      <div class="panel-footer">
+                        Table - 5 rows
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                This is a striped table design
-            </div>
-            <div class="panel-body">
-                <div class="table-responsive">
-                <table cellpadding="1" cellspacing="1" class="table table-condensed table-striped">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Street</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Henry</td>
-                        <td>Purus Gravida Sagittis Limited</td>
-                        <td>055 1753 4032</td>
-                    </tr>
-                    <tr>
-                        <td>Shelly</td>
-                        <td>Posuere Enim Inc.</td>
-                        <td>0313 143 2317</td>
-                    </tr>
-                    <tr>
-                        <td>Edan</td>
-                        <td>Quisque Imperdiet Company</td>
-                        <td>076 1743 8649</td>
-                    </tr>
-                    <tr>
-                        <td>Sophia</td>
-                        <td>Quam Incorporated</td>
-                        <td>0863 826 7513</td>
-                    </tr>
-                    <tr>
-                        <td>Griffith</td>
-                        <td>Tempor Erat Corp.</td>
-                        <td>0845 46 45</td>
-                    </tr>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="hpanel">
+                      <div class="panel-heading">
+                        <div class="panel-tools">
+                          <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                          <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        This is a striped table design
+                      </div>
+                      <div class="panel-body">
+                        <div class="table-responsive">
+                          <table cellpadding="1" cellspacing="1" class="table table-condensed table-striped">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Street</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Henry</td>
+                                <td>Purus Gravida Sagittis Limited</td>
+                                <td>055 1753 4032</td>
+                              </tr>
+                              <tr>
+                                <td>Shelly</td>
+                                <td>Posuere Enim Inc.</td>
+                                <td>0313 143 2317</td>
+                              </tr>
+                              <tr>
+                                <td>Edan</td>
+                                <td>Quisque Imperdiet Company</td>
+                                <td>076 1743 8649</td>
+                              </tr>
+                              <tr>
+                                <td>Sophia</td>
+                                <td>Quam Incorporated</td>
+                                <td>0863 826 7513</td>
+                              </tr>
+                              <tr>
+                                <td>Griffith</td>
+                                <td>Tempor Erat Corp.</td>
+                                <td>0845 46 45</td>
+                              </tr>
 
-                    </tbody>
-                </table>
-</div>
+                            </tbody>
+                          </table>
+                        </div>
 
-            </div>
-            <div class="panel-footer">
-                Table - 5 rows
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-8">
-        <div class="hpanel">
-            <div class="panel-heading">
-                <div class="panel-tools">
-                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                    <a class="closebox"><i class="fa fa-times"></i></a>
+                      </div>
+                      <div class="panel-footer">
+                        Table - 5 rows
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="hpanel">
+                      <div class="panel-heading">
+                        <div class="panel-tools">
+                          <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                          <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        This is a bordered striped basic table
+                      </div>
+                      <div class="panel-body">
+                        <div class="table-responsive">
+                          <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Street Address</th>
+                                <th>City</th>
+                                <th>Country</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Abraham</td>
+                                <td>076 9477 4896</td>
+                                <td>294-318 Duis Ave</td>
+                                <td>Vosselaar</td>
+                                <td>Belgium</td>
+                              </tr>
+                              <tr>
+                                <td>Phelan</td>
+                                <td>0500 034548</td>
+                                <td>680-1097 Mi Rd.</td>
+                                <td>Lavoir</td>
+                                <td>Pakistan</td>
+                              </tr>
+                              <tr>
+                                <td>Raya</td>
+                                <td>(01315) 27698</td>
+                                <td>Ap #289-8161 In Avenue</td>
+                                <td>Santomenna</td>
+                                <td>Burkina Faso</td>
+                              </tr>
+                              <tr>
+                                <td>Azalia</td>
+                                <td>0500 854198</td>
+                                <td>226-4861 Augue. St.</td>
+                                <td>Newtown</td>
+                                <td>Christmas Island</td>
+                              </tr>
+                              <tr>
+                                <td>Garth</td>
+                                <td>(01662) 59083</td>
+                                <td>3219 Elit Avenue</td>
+                                <td>Ternitz</td>
+                                <td>Saint Martin</td>
+                              </tr>
+                              <tr>
+                                <td>Selma</td>
+                                <td>0877 118 6905</td>
+                                <td>P.O. Box 410, 7331 Nec, St.</td>
+                                <td>Glenrothes</td>
+                                <td>Korea, North</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                      </div>
+                      <div class="panel-footer">
+                        Table - 6 rows
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                This is a bordered striped basic table
-            </div>
-            <div class="panel-body">
-                <div class="table-responsive">
-                <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Street Address</th>
-                        <th>City</th>
-                        <th>Country</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Abraham</td>
-                        <td>076 9477 4896</td>
-                        <td>294-318 Duis Ave</td>
-                        <td>Vosselaar</td>
-                        <td>Belgium</td>
-                    </tr>
-                    <tr>
-                        <td>Phelan</td>
-                        <td>0500 034548</td>
-                        <td>680-1097 Mi Rd.</td>
-                        <td>Lavoir</td>
-                        <td>Pakistan</td>
-                    </tr>
-                    <tr>
-                        <td>Raya</td>
-                        <td>(01315) 27698</td>
-                        <td>Ap #289-8161 In Avenue</td>
-                        <td>Santomenna</td>
-                        <td>Burkina Faso</td>
-                    </tr>
-                    <tr>
-                        <td>Azalia</td>
-                        <td>0500 854198</td>
-                        <td>226-4861 Augue. St.</td>
-                        <td>Newtown</td>
-                        <td>Christmas Island</td>
-                    </tr>
-                    <tr>
-                        <td>Garth</td>
-                        <td>(01662) 59083</td>
-                        <td>3219 Elit Avenue</td>
-                        <td>Ternitz</td>
-                        <td>Saint Martin</td>
-                    </tr>
-                    <tr>
-                        <td>Selma</td>
-                        <td>0877 118 6905</td>
-                        <td>P.O. Box 410, 7331 Nec, St.</td>
-                        <td>Glenrothes</td>
-                        <td>Korea, North</td>
-                    </tr>
-                    </tbody>
-                </table>
-</div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="hpanel">
+                      <div class="panel-heading">
+                        <div class="panel-tools">
+                          <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                          <a class="closebox"><i class="fa fa-times"></i></a>
+                        </div>
+                        This is a bordered striped and responsive table
+                      </div>
+                      <div class="panel-body">
+                        <div class="table-responsive">
+                          <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Street Address</th>
+                                <th>City</th>
+                                <th>Country</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Abraham</td>
+                                <td>076 9477 4896</td>
+                                <td>294-318 Duis Ave</td>
+                                <td>Vosselaar</td>
+                                <td>Belgium</td>
+                              </tr>
+                              <tr>
+                                <td>Phelan</td>
+                                <td>0500 034548</td>
+                                <td>680-1097 Mi Rd.</td>
+                                <td>Lavoir</td>
+                                <td>Pakistan</td>
+                              </tr>
+                              <tr>
+                                <td>Raya</td>
+                                <td>(01315) 27698</td>
+                                <td>Ap #289-8161 In Avenue</td>
+                                <td>Santomenna</td>
+                                <td>Burkina Faso</td>
+                              </tr>
+                              <tr>
+                                <td>Azalia</td>
+                                <td>0500 854198</td>
+                                <td>226-4861 Augue. St.</td>
+                                <td>Newtown</td>
+                                <td>Christmas Island</td>
+                              </tr>
+                              <tr>
+                                <td>Garth</td>
+                                <td>(01662) 59083</td>
+                                <td>3219 Elit Avenue</td>
+                                <td>Ternitz</td>
+                                <td>Saint Martin</td>
+                              </tr>
+                              <tr>
+                                <td>Selma</td>
+                                <td>0877 118 6905</td>
+                                <td>P.O. Box 410, 7331 Nec, St.</td>
+                                <td>Glenrothes</td>
+                                <td>Korea, North</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
 
-            </div>
-            <div class="panel-footer">
-                Table - 6 rows
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-12">
-        <div class="hpanel">
-            <div class="panel-heading">
-                <div class="panel-tools">
-                    <a class="showhide"><i class="fa fa-chevron-up"></i></a>
-                    <a class="closebox"><i class="fa fa-times"></i></a>
-                </div>
-                This is a bordered striped and responsive table
-            </div>
-            <div class="panel-body">
-                <div class="table-responsive">
-                <table cellpadding="1" cellspacing="1" class="table table-bordered table-striped">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Street Address</th>
-                        <th>City</th>
-                        <th>Country</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Abraham</td>
-                        <td>076 9477 4896</td>
-                        <td>294-318 Duis Ave</td>
-                        <td>Vosselaar</td>
-                        <td>Belgium</td>
-                    </tr>
-                    <tr>
-                        <td>Phelan</td>
-                        <td>0500 034548</td>
-                        <td>680-1097 Mi Rd.</td>
-                        <td>Lavoir</td>
-                        <td>Pakistan</td>
-                    </tr>
-                    <tr>
-                        <td>Raya</td>
-                        <td>(01315) 27698</td>
-                        <td>Ap #289-8161 In Avenue</td>
-                        <td>Santomenna</td>
-                        <td>Burkina Faso</td>
-                    </tr>
-                    <tr>
-                        <td>Azalia</td>
-                        <td>0500 854198</td>
-                        <td>226-4861 Augue. St.</td>
-                        <td>Newtown</td>
-                        <td>Christmas Island</td>
-                    </tr>
-                    <tr>
-                        <td>Garth</td>
-                        <td>(01662) 59083</td>
-                        <td>3219 Elit Avenue</td>
-                        <td>Ternitz</td>
-                        <td>Saint Martin</td>
-                    </tr>
-                    <tr>
-                        <td>Selma</td>
-                        <td>0877 118 6905</td>
-                        <td>P.O. Box 410, 7331 Nec, St.</td>
-                        <td>Glenrothes</td>
-                        <td>Korea, North</td>
-                    </tr>
-                    </tbody>
-                </table>
+                      </div>
+                      <div class="panel-footer">
+                        Table - 6 rows
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
             </div>
-            <div class="panel-footer">
-                Table - 6 rows
-            </div>
+
+            <?php include('partials/footer.php'); ?>
+
         </div>
+
     </div>
-</div>
-
-</div>
-
-    <!-- Footer-->
-    <footer class="footer">
-        
-        ©2017 Abacus
-    </footer>
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- App scripts -->
-<script src="assets/js/application.js"></script>
 
 </body>
+
 </html>
