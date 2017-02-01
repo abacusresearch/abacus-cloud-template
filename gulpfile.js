@@ -40,9 +40,6 @@ config.vendor = {
     'bower_components/c3/c3.min.js',
     'bower_components/Chart.js/Chart.js'
   ],
-  jsAfter: [
-
-  ],
   'css': [
     'bower_components/animate.css/animate.css',
     'bower_components/fontawesome/css/font-awesome.css',
@@ -91,7 +88,6 @@ gulp.task('js', function() {
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(sourcemaps.init())
-    .pipe(addsrc.prepend(config.vendor.jsAfter))
     .pipe(addsrc.prepend(config.vendor.js))
     .pipe(addsrc.append(config.srcPath + 'js/application.js'))
     //add .min if gulp is ran with '--prod'

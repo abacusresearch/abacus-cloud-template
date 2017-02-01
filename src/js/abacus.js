@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function() {
 
     // Add special class to minimalize page elements when screen is less than 768px
     setBodySmall();
@@ -110,7 +110,7 @@ $(document).ready(function () {
 
 $(window).bind("load", function () {
     // Remove splash screen after load
-    $('.splash').css('display', 'none')
+    $('.splash').css('display', 'none');
 });
 
 $(window).bind("resize click", function () {
@@ -166,9 +166,9 @@ $.fn['animatePanel'] = function() {
     var child = $(this).data('child');
 
     // Set default values for attrs
-    if(!effect) { effect = 'zoomIn'}
-    if(!delay) { delay = 0.06 } else { delay = delay / 10 }
-    if(!child) { child = '.row > div'} else {child = "." + child}
+    if (!effect) { effect = 'zoomIn'; }
+    if (!delay) { delay = 0.06; } else { delay = delay / 10; }
+    if (!child) { child = '.row > div'; } else {child = "." + child; }
 
     //Set defaul values for start animation and delay
     var startAnimation = 0;
@@ -198,6 +198,6 @@ $.fn['animatePanel'] = function() {
     setTimeout(function(){
         $('.stagger').css('animation', '');
         $('.stagger').removeClass(effect).removeClass('animated-panel').removeClass('stagger');
-    }, animateTime)
+    }, animateTime);
 
 };
