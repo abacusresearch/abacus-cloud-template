@@ -35,10 +35,10 @@
 
                                 <div class="text-center float-e-margins">
                                     <div class="font-bold m">Examples</div>
-                                    <button class="btn btn-info btn-sm">Run example</button>
-                                    <button class="btn btn-success btn-sm">Run example</button>
-                                    <button class="btn btn-warning btn-sm">Run example</button>
-                                    <button class="btn btn-danger btn-sm">Run example</button>
+                                    <button class="homerDemo1 btn btn-info btn-sm">Run example</button>
+                                    <button class="homerDemo2 btn btn-success btn-sm">Run example</button>
+                                    <button class="homerDemo3 btn btn-warning btn-sm">Run example</button>
+                                    <button class="homerDemo4 btn btn-danger btn-sm">Run example</button>
                                 </div>
 
                                 <div class="m-t-md">

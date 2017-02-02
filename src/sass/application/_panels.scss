@@ -1,9 +1,9 @@
 /* Panels */
 .hpanel > .panel-heading {
-  color: inherit;
+  color: #7c8998;
   font-weight: 600;
-  padding: 10px 4px;
-  transition: all .3s;
+  padding: 10px 0;
+  transition: $main-transition;
   border: 1px solid transparent;
 }
 
@@ -15,8 +15,7 @@
   color: inherit;
   border: 1px solid $border-color;
   border-top: none;
-  font-size: 90%;
-  background: $color-bright;
+  background: #fff;
   padding: 10px 15px;
 }
 
@@ -90,7 +89,7 @@
 }
 
 .hpanel.hviolet .panel-body {
-  border-top: 2px solid $color-violet;
+  border-top: 2px solid $color-secondary;
 }
 
 .hpanel.horange .panel-body {
@@ -106,55 +105,55 @@
 }
 
 .hpanel.hnavyblue .panel-body {
-  border-top: 2px solid $color-navy-blue;
+  border-top: 2px solid $color-primary-ninja;
 }
 
 .hpanel.hbggreen .panel-body {
   background: $color-green;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .hpanel.hbgblue .panel-body {
   background: $color-blue;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .hpanel.hbgyellow .panel-body {
   background: $color-yellow;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .hpanel.hbgviolet .panel-body {
-  background: $color-violet;
+  background: $color-secondary;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .hpanel.hbgorange .panel-body {
   background: $color-orange;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .hpanel.hbgred .panel-body {
   background: $color-red;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .hpanel.hbgreddeep .panel-body {
   background: $color-red-deep;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .hpanel.hbgnavyblue .panel-body {
-  background: $color-navy-blue;
+  background: $color-primary-ninja;
   color: #fff;
-  border:none;
+  border: none;
 }
 
 .panel-group .panel-heading {
@@ -179,7 +178,7 @@
 }
 
 .panel-body h5, .panel-body h4 {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .small-header .panel-body h2 {
@@ -206,7 +205,7 @@
 
     + li:before {
       padding: 0 5px;
-      color: $color-navy-blue;
+      color: $color-primary-ninja;
     }
   }
 

@@ -25,22 +25,22 @@
                                 <div class="wrapper">
                                     <div class="row color-demo">
                                         <div class="header-line h-bg-navy-blue extreme-color">
-                                            <div>Primary<span>Navy Blue</span></div>
+                                            <div>Primary</div>
                                         </div>
                                         <div class="header-line h-bg-violet">
-                                            <div>Primary 2<span>Violet</span></div>
+                                            <div>Secondary</div>
                                         </div>
                                         <div class="header-line h-bg-blue">
-                                            <div>Info<span>Blue</span></div>
+                                            <div>Info</div>
                                         </div>
                                         <div class="header-line h-bg-green">
-                                            <div>Success<span>Green</span></div>
+                                            <div>Success</div>
                                         </div>
                                         <div class="header-line h-bg-yellow">
-                                            <div>Warning<span>Yellow</span></div>
+                                            <div>Warning</div>
                                         </div>
                                         <div class="header-line h-bg-red">
-                                            <div>Danger<span>Red</span></div>
+                                            <div>Danger</div>
                                         </div>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                                 <p>
                                     <button type="button" class="btn w-xs btn-default">Default</button>
                                     <button type="button" class="btn w-xs btn-primary">Primary</button>
-                                    <button type="button" class="btn w-xs btn-primary2">Primary2</button>
+                                    <button type="button" class="btn w-xs btn-secondary">Secondary</button>
                                     <button type="button" class="btn w-xs btn-info">Info</button>
                                     <button type="button" class="btn w-xs btn-success">Success</button>
                                     <button type="button" class="btn w-xs btn-warning">Warning</button>
@@ -125,7 +125,7 @@
                                 <p>
                                     <button type="button" class="btn btn-outline btn-default">Default</button>
                                     <button type="button" class="btn btn-outline btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-outline btn-primary2">Primary2</button>
+                                    <button type="button" class="btn btn-outline btn-secondary">Secondary</button>
                                     <button type="button" class="btn btn-outline btn-info">Info</button>
                                     <button type="button" class="btn btn-outline btn-success">Success</button>
                                     <button type="button" class="btn btn-outline btn-warning">Warning</button>

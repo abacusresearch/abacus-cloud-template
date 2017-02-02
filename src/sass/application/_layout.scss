@@ -1,25 +1,31 @@
 /* Layout */
+* {
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+  outline: 0;
+}
+
 html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
 }
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #fff;
+  font-family: Europa, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f7;
   font-size: 13px;
   color: $color-text;
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100vh;
 }
 
 #header {
   background-color: #fff;
   display: block;
-  height: 62px;
+  height: 56px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -32,8 +38,8 @@ body {
   float: left;
   left: 0;
   position: absolute;
-  top: 62px;
-  transition: all 0.4s ease 0s;
+  top: 56px;
+  transition: $main-transition;
 
 }
 
@@ -43,9 +49,9 @@ body {
   padding: 0;
   background: $color-background;
   border-left: 1px solid $border-color;
-  transition: all 0.4s ease 0s;
+  transition: $main-transition;
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .content {
@@ -55,7 +61,7 @@ body {
 
 .footer {
   padding: 10px 18px;
-  background: #ffffff;
+  background: #fff;
   border-top: 1px solid $border-color;
   transition: all 0.4s ease 0s;
   position: absolute;
@@ -84,18 +90,6 @@ body {
   padding: 20px 40px;
 }
 
-.color-line {
-  background: $color-bright;
-  height: 6px;
-  background-image: -webkit-linear-gradient(left, $color-navy-blue, $color-navy-blue 25%, $color-violet 25%, $color-violet 35%, $color-blue 35%, $color-blue 45%, $color-green 45%, $color-green 55%, $color-yellow 55%, $color-yellow 65%, $color-orange 65%, $color-orange 75%, $color-red 85%, $color-red 85%,$color-red-deep 85%, $color-red-deep 100%);
-  background-image: -moz-linear-gradient(left, $color-navy-blue, $color-navy-blue 25%, $color-violet 25%, $color-violet 35%, $color-blue 35%, $color-blue 45%, $color-green 45%, $color-green 55%, $color-yellow 55%, $color-yellow 65%, $color-orange 65%, $color-orange 75%, $color-red 85%, $color-red 85%,$color-red-deep 85%, $color-red-deep 100%);
-  background-image: -ms-linear-gradient(left, $color-navy-blue, $color-navy-blue 25%, $color-violet 25%, $color-violet 35%, $color-blue 35%, $color-blue 45%, $color-green 45%, $color-green 55%, $color-yellow 55%, $color-yellow 65%, $color-orange 65%, $color-orange 75%, $color-red 85%, $color-red 85%,$color-red-deep 85%, $color-red-deep 100%);
-  background-image: linear-gradient(to right, $color-navy-blue, $color-navy-blue 25%, $color-violet 25%, $color-violet 35%, $color-blue 35%, $color-blue 45%, $color-green 45%, $color-green 55%, $color-yellow 55%, $color-yellow 65%, $color-orange 65%, $color-orange 75%, $color-red 85%, $color-red 85%,$color-red-deep 85%, $color-red-deep 100%);
-  background-size: 100% 6px;
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-}
-
 .fixed-navbar #header {
   width: 100%;
   position: fixed;
@@ -104,26 +98,24 @@ body {
 }
 
 .fixed-navbar #wrapper {
-  top: 62px;
+  top: 56px;
 }
 
 .fixed-sidebar #menu {
   position: fixed;
   overflow-x: hidden;
-  overflow-y: scroll;
-  width: 197px;
-  padding-right: 17px;
+  overflow-y: auto;
 }
 
 .fixed-sidebar.show-sidebar #menu {
-  width: 180px;
+  width: $menu-width;
 }
 
 .fixed-footer .footer {
   position: fixed;
   z-index: 1001;
   bottom: 0;
-  left: 181px;
+  left: calc($menu-width + 1px);
   right: 0;
 }
 
@@ -138,7 +130,7 @@ body {
   }
 
   .fixed-footer.show-sidebar .footer {
-    left: 181px;
+    left: calc($menu-width + 1px);
   }
 
 }
@@ -164,10 +156,10 @@ body {
 
 .fixed-small-header .small-header {
   position: fixed;
-  top: 62px;
+  top: 56px;
   left: 0;
   right: 0;
-  margin-left: 181px;
+  margin-left: calc($menu-width + 1px);
   z-index: 100;
 }
 
@@ -188,7 +180,7 @@ body {
 }
 
 .fixed-small-header.page-small.show-sidebar .small-header {
-  margin-left: 181px;
+  margin-left: calc($menu-width + 1px);
   overflow: hidden;
 }
 
@@ -196,20 +188,12 @@ body {
 
   background-color: #ffffff;
 
-  .profile-picture {
-    background-color: white;
-  }
-
   .boxed-wrapper {
     display: block;
     max-width: 1200px;
     margin:0 auto;
     position: relative;
     overflow: hidden;
-
-    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.55);
-    -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.55);
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.55);
   }
 
 

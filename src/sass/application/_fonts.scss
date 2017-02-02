@@ -1,14 +1,48 @@
+@font-face {
+  font-family: 'Europa';
+  src: url('../fonts/Europa-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Europa-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Europa-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Europa-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Europa-Bold.svg#Europa-Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Europa';
+  src: url('../fonts/Europa-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Europa-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Europa-Light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Europa-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Europa-Light.svg#Europa-Light') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Europa';
+  src: url('../fonts/Europa-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Europa-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Europa-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Europa-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Europa-Regular.svg#Europa-Regular') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+
 /* Fonts */
 .font-light {
-  font-weight: 300;
+  font-weight: 200;
 }
 .font-normal {
   font-weight: 400;
 }
-.font-bold {
-  font-weight: 600;
-}
-.font-extra-bold {
+.font-bold, .font-extra-bold {
   font-weight: 700;
 }
 
@@ -20,12 +54,29 @@
   opacity: 0.5 !important;
 }
 
+.text-icon-28 {
+  font-size: 28px; 
+}
+
+.text-icon-20 {
+  font-size: 20px;
+  line-height: .9;
+  position: relative;
+  display: block;
+}
+
 .text-big {
   font-size: 60px;
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-weight: 200;
+  font-weight: 400;
+}
+
+small, .small {
+  font-size: 100%;
+  color: #7c8998;
+  font-weight: 400
 }

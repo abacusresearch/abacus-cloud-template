@@ -38,10 +38,10 @@
 /* Color */
 
 .h-bg-navy-blue {
-  background: $color-navy-blue;
+  background: $color-primary-ninja;
 }
 .h-bg-violet {
-  background: $color-violet;
+  background: $color-secondary;
 }
 .h-bg-blue {
   background: $color-blue;
@@ -63,10 +63,10 @@
 }
 
 .text-primary {
-  color: $color-navy-blue;
+  color: $color-primary-ninja;
 }
 .text-primary-2 {
-  color: $color-violet;
+  color: $color-secondary;
 }
 .text-info {
   color: $color-blue;
@@ -153,7 +153,7 @@
 #logo {
   float: left;
   width: $menu-width;
-  background-color: $color-navy-blue;
+  background-color: $color-primary-ninja;
   padding: 18px 10px 18px 18px;
   height: 56px;
   text-align: center;
@@ -173,7 +173,7 @@
 
 #logo.light-version span {
   font-weight: 600;
-  color: $color-navy-blue;
+  color: $color-primary-ninja;
   font-size: 14px;
 }
 
@@ -201,7 +201,7 @@
 }
 
 .stats-box-detail {
-  background: $color-navy-blue;
+  background: $color-primary-ninja;
   color: #fff;
   position: relative;
 }
@@ -237,7 +237,7 @@
 }
 
 #side-menu li.active a, #side-menu li:hover a {
-  color: $color-navy-blue;
+  color: $color-primary-ninja;
 }
 
 #side-menu li .nav-second-level li a {
@@ -248,7 +248,7 @@
 }
 
 #side-menu li .nav-second-level li.active a {
-  color: $color-navy-blue;
+  color: $color-primary-ninja;
   background-color: $color-bright;
 }
 
@@ -396,11 +396,11 @@ body.page-small.show-sidebar #wrapper {
 
 a {
   cursor: pointer;
-  color: $color-navy-blue;
+  color: $color-primary-ninja;
 }
 
 a:hover, a:focus {
-  color: $color-navy-blue;
+  color: $color-primary-ninja;
   text-decoration: none;
 }
 
@@ -456,8 +456,8 @@ a:hover, a:focus {
 /* LIST GROUP */
 
 a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
-  background-color: $color-navy-blue;
-  border-color: $color-navy-blue;
+  background-color: $color-primary-ninja;
+  border-color: $color-primary-ninja;
   color: #FFFFFF !important;
 }
 
@@ -860,12 +860,12 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
              }
 }
 
-@include checkbox-variant('.checkbox-primary', $color-navy-blue);
+@include checkbox-variant('.checkbox-primary', $color-primary-ninja);
 @include checkbox-variant('.checkbox-danger', $color-red);
 @include checkbox-variant('.checkbox-info', $color-blue);
 @include checkbox-variant('.checkbox-warning', $color-yellow);
 @include checkbox-variant('.checkbox-success', $color-green);
-@include radio-variant('.radio-primary', $color-navy-blue);
+@include radio-variant('.radio-primary', $color-primary-ninja);
 @include radio-variant('.radio-danger', $color-red);
 @include radio-variant('.radio-info', $color-blue);
 @include radio-variant('.radio-warning', $color-yellow);
@@ -908,7 +908,7 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 }
 
 .badge.badge-primary {
-  background-color: $color-navy-blue;
+  background-color: $color-primary-ninja;
 }
 
 /* Tables */
