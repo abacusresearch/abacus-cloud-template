@@ -28,15 +28,14 @@ config.collection = {
     'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
     'bower_components/sparkline/index.js',
     'bower_components/summernote/dist/summernote.min.js',
-    'bower_components/peity/jquery.peity.min.js',
     'bower_components/toastr/toastr.min.js',
-
     'bower_components/datatables.net/js/jquery.dataTables.min.js',
     'bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js',
     'bower_components/datatables.net-buttons/js/buttons.html5.min.js',
     'bower_components/datatables.net-buttons/js/buttons.print.min.js',
     'bower_components/datatables.net-buttons/js/dataTables.buttons.min.js',
     'bower_components/datatables.net-buttons-bs/js/buttons.bootstrap.min.js',
+    'bower_components/peity/jquery.peity.min.js', // maybe removable
     config.srcPath + 'js/**/*.js',
   ],
   'css': [

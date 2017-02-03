@@ -20,7 +20,7 @@ $(function() {
     $('#side-menu').find('.has-sub .active').parents('.has-sub').addClass('active');
 
     $('#side-menu').metisMenu();
-    
+
     // Initialize animate panel function
     $('.animate-panel').animatePanel();
 
@@ -161,7 +161,7 @@ function setBodySmall() {
 }
 
 // Animate panel function
-$.fn['animatePanel'] = function() {
+$.fn.animatePanel = function() {
 
     var element = $(this);
     var effect = $(this).data('effect');
@@ -202,5 +202,27 @@ $.fn['animatePanel'] = function() {
         $('.stagger').css('animation', '');
         $('.stagger').removeClass(effect).removeClass('animated-panel').removeClass('stagger');
     }, animateTime);
+
+
+    /**
+     * Pie charts data and options used in many views
+     */
+
+    $("span.pie").peity("pie", {
+        fill: ["#62cb31", "#edf0f5"]
+    });
+
+    $(".line").peity("line",{
+        fill: '#62cb31',
+        stroke:'#edf0f5'
+    });
+
+    $(".bar").peity("bar", {
+        fill: ["#62cb31", "#edf0f5"]
+    });
+
+    $(".bar_dashboard").peity("bar", {
+        fill: ["#62cb31", "#edf0f5"]
+    });
 
 };
