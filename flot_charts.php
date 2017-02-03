@@ -123,7 +123,13 @@
 
         </div>
     </div>
-
+    
+    <script src='bower_components/jquery-flot/jquery.flot.js'></script>
+    <script src='bower_components/jquery-flot/jquery.flot.resize.js'></script>
+    <script src='bower_components/jquery-flot/jquery.flot.pie.js'></script>
+    <script src='bower_components/flot.curvedlines/curvedLines.js'></script>
+    <script src='bower_components/jquery.flot.spline/index.js'></script>
+    
     <script>
 
         $(function () {

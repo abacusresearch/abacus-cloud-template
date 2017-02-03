@@ -14,10 +14,13 @@ $(function() {
     });
 
     // Initialize metsiMenu plugin to sidebar menu
-    $('#side-menu').metisMenu();
 
     $('#side-menu').find('li > .nav-second-level').parent('li').addClass('has-sub');
 
+    $('#side-menu').find('.has-sub .active').parents('.has-sub').addClass('active');
+
+    $('#side-menu').metisMenu();
+    
     // Initialize animate panel function
     $('.animate-panel').animatePanel();
 
