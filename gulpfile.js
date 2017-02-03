@@ -48,6 +48,7 @@ config.collection = {
     'bower_components/metisMenu/dist/metisMenu.css',
     'bower_components/select2/select2.css',
     'bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css',
+    'bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css',
     'bower_components/toastr/toastr.min.css',
     'bower_components/c3/c3.min.css',
     config.srcPath + 'sass/application.s*ss'

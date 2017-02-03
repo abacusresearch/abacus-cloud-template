@@ -29,7 +29,7 @@
             <li>
                 <a href="#"><span class="nav-label">Charts</span><span class="fa arrow text-primary-2"></span> </a>
                 <ul class="nav nav-second-level">
-                    <li class="<?php echo $pageName == 'ChartJs' ? 'active' : '' ?>"><a href="chartjs.php">ChartJs</a></li>
+                    <li class="<?php echo $pageName == 'Chartjs' ? 'active' : '' ?>"><a href="chartjs.php">ChartJs</a></li>
                     <li class="<?php echo $pageName == 'Flot Charts' ? 'active' : '' ?>"><a href="flot_charts.php">Flot charts</a></li>
                     <li class="<?php echo $pageName == 'Inline Graphs' ? 'active' : '' ?>"><a href="inline_graphs.php">Inline Graphs</a></li>
                     <li class="<?php echo $pageName == 'Chartist' ? 'active' : '' ?>"><a href="chartist.php">Chartist</a></li>

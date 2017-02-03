@@ -680,7 +680,7 @@
             // Initialize Example 2
             $('.example-datatable').dataTable({
                 lengthMenu: [ [10, 25, 50, -1], [10, 25, 50, "All"] ],
-                dom: '<"col-lg-12"<"table-responsive"t>>' + '<"col-sm-6 col-xs-12"<"pull-left m-r-md"i><"form-group"<"floating-label-wrap m-t-none"l>>>' + '<"col-sm-6 col-xs-12"p>',
+                dom: '<"col-lg-12"<"table-responsive"t>>' + '<"col-sm-6 col-xs-12"<"pull-left m-r-md"><"form-group pull-left"<"floating-label-wrap m-t-none"l>>i>' + '<"col-sm-6 col-xs-12"p>',
                 // select: {
                 //     items: 'rows',
                 //     info: false
@@ -693,7 +693,21 @@
                     oPaginate: {
                         sNext: '<i class="pe-7s-angle-right text-icon-20"></i>',
                         sPrevious: '<i class="pe-7s-angle-left text-icon-20"></i>',
-                    }
+                    },
+                    sEmptyTable: "No data available in table",
+                    sInfo: " of _TOTAL_ entries",
+                    sInfoEmpty: "Showing 0 to 0 of 0 entries",
+                    sInfoFiltered: "(filtered from _MAX_ total entries)",
+                    sInfoPostFix: "",
+                    sDecimal: ".",
+                    sThousands: "'",
+                    sLengthMenu: "Show _MENU_",
+                    sLoadingRecords: "Loading...",
+                    sProcessing: "Processing...",
+                    sSearch: "Search",
+                    sSearchPlaceholder: "",
+                    sUrl: "",
+                    sZeroRecords: "No matching records found",
                 },
                 order: [],
                 columnDefs: [{
