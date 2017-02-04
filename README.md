@@ -1,2 +1,2 @@
-# Abacus Cloud Template
-## Components library for the Abacus Apps Ecosystem
+# Abacus Template
+### Components library for the Abacus Apps Ecosystem
