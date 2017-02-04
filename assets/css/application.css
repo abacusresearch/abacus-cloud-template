@@ -7247,6 +7247,469 @@ input[type="radio"] .styled:checked + label::after {
 
 /*# sourceMappingURL=bootstrap-datepicker3.min.css.map */
 
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #a9a9a9; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-dropzone {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  color: #87cefa;
+  background-color: white;
+  opacity: .95;
+  pointer-event: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-dropzone .note-dropzone-message {
+  display: table-cell;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-dropzone.hover {
+  color: #098ddf; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor.dragover .note-dropzone {
+  display: table; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor.codeview .note-editing-area .note-editable {
+  display: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor.codeview .note-editing-area .note-codable {
+  display: block; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor.fullscreen .note-editable {
+  background-color: white; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor.fullscreen .note-resizebar {
+  display: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-editing-area {
+  position: relative;
+  overflow: hidden; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-editing-area .note-editable {
+  padding: 10px;
+  overflow: auto;
+  color: #000;
+  background-color: #fff;
+  outline: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-editing-area .note-editable[contenteditable=true]:empty:not(:focus):before {
+  content: attr(data-placeholder); }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-editing-area .note-editable[contenteditable="false"] {
+  background-color: #e5e5e5; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-editing-area .note-codable {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0;
+  font-family: Menlo,Monaco,monospace,sans-serif;
+  font-size: 14px;
+  color: #ccc;
+  background-color: #222;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-statusbar {
+  background-color: #f5f5f5; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-statusbar .note-resizebar {
+  width: 100%;
+  height: 8px;
+  padding-top: 1px;
+  cursor: ns-resize; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-editor .note-statusbar .note-resizebar .note-icon-bar {
+  width: 20px;
+  margin: 1px auto;
+  border-top: 1px solid #a9a9a9; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-air-editor {
+  outline: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover {
+  max-width: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content a {
+  display: inline-block;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .arrow {
+  left: 20px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content, .panel-heading.note-toolbar {
+  padding: 0 0 5px 5px;
+  margin: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content > .btn-group, .panel-heading.note-toolbar > .btn-group {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .btn-group .note-table, .panel-heading.note-toolbar .btn-group .note-table {
+  min-width: 0;
+  padding: 5px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .btn-group .note-table .note-dimension-picker, .panel-heading.note-toolbar .btn-group .note-table .note-dimension-picker {
+  font-size: 18px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .btn-group .note-table .note-dimension-picker .note-dimension-picker-mousecatcher, .panel-heading.note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-mousecatcher {
+  position: absolute !important;
+  z-index: 3;
+  width: 10em;
+  height: 10em;
+  cursor: pointer; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .btn-group .note-table .note-dimension-picker .note-dimension-picker-unhighlighted, .panel-heading.note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-unhighlighted {
+  position: relative !important;
+  z-index: 1;
+  width: 5em;
+  height: 5em;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAACVBMVEUAAIj4+Pjp6ekKlAqjAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfYAR0BKhmnaJzPAAAAG0lEQVQI12NgAAOtVatWMTCohoaGUY+EmIkEAEruEzK2J7tvAAAAAElFTkSuQmCC") repeat; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .btn-group .note-table .note-dimension-picker .note-dimension-picker-highlighted, .panel-heading.note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-highlighted {
+  position: absolute !important;
+  z-index: 2;
+  width: 1em;
+  height: 1em;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAACVBMVEUAAIjd6vvD2f9LKLW+AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfYAR0BKwNDEVT0AAAAG0lEQVQI12NgAAOtVatWMTCohoaGUY+EmIkEAEruEzK2J7tvAAAAAElFTkSuQmCC") repeat; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-style h1, .panel-heading.note-toolbar .note-style h1, .note-popover .popover .popover-content .note-style h2, .panel-heading.note-toolbar .note-style h2, .note-popover .popover .popover-content .note-style h3, .panel-heading.note-toolbar .note-style h3, .note-popover .popover .popover-content .note-style h4, .panel-heading.note-toolbar .note-style h4, .note-popover .popover .popover-content .note-style h5, .panel-heading.note-toolbar .note-style h5, .note-popover .popover .popover-content .note-style h6, .panel-heading.note-toolbar .note-style h6, .note-popover .popover .popover-content .note-style blockquote, .panel-heading.note-toolbar .note-style blockquote {
+  margin: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color .dropdown-toggle, .panel-heading.note-toolbar .note-color .dropdown-toggle {
+  width: 20px;
+  padding-left: 5px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color .dropdown-menu, .panel-heading.note-toolbar .note-color .dropdown-menu {
+  min-width: 340px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group, .panel-heading.note-toolbar .note-color .dropdown-menu .btn-group {
+  margin: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group:first-child, .panel-heading.note-toolbar .note-color .dropdown-menu .btn-group:first-child {
+  margin: 0 5px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group .note-palette-title, .panel-heading.note-toolbar .note-color .dropdown-menu .btn-group .note-palette-title {
+  margin: 2px 7px;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group .note-color-reset, .panel-heading.note-toolbar .note-color .dropdown-menu .btn-group .note-color-reset {
+  padding: 0 3px;
+  margin: 3px;
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 5px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group .note-color-row, .panel-heading.note-toolbar .note-color .dropdown-menu .btn-group .note-color-row {
+  height: 20px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color .dropdown-menu .btn-group .note-color-reset:hover, .panel-heading.note-toolbar .note-color .dropdown-menu .btn-group .note-color-reset:hover {
+  background: #eee; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-para .dropdown-menu, .panel-heading.note-toolbar .note-para .dropdown-menu {
+  min-width: 216px;
+  padding: 5px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-para .dropdown-menu > div:first-child, .panel-heading.note-toolbar .note-para .dropdown-menu > div:first-child {
+  margin-right: 5px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .dropdown-menu, .panel-heading.note-toolbar .dropdown-menu {
+  min-width: 90px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .dropdown-menu.right, .panel-heading.note-toolbar .dropdown-menu.right {
+  right: 0;
+  left: auto; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .dropdown-menu.right::before, .panel-heading.note-toolbar .dropdown-menu.right::before {
+  right: 9px;
+  left: auto !important; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .dropdown-menu.right::after, .panel-heading.note-toolbar .dropdown-menu.right::after {
+  right: 10px;
+  left: auto !important; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .dropdown-menu.note-check li a i, .panel-heading.note-toolbar .dropdown-menu.note-check li a i {
+  color: deepskyblue;
+  visibility: hidden; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .dropdown-menu.note-check li a.checked i, .panel-heading.note-toolbar .dropdown-menu.note-check li a.checked i {
+  visibility: visible; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-fontsize-10, .panel-heading.note-toolbar .note-fontsize-10 {
+  font-size: 10px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color-palette, .panel-heading.note-toolbar .note-color-palette {
+  line-height: 1; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color-palette div .note-color-btn, .panel-heading.note-toolbar .note-color-palette div .note-color-btn {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #fff; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-popover .popover .popover-content .note-color-palette div .note-color-btn:hover, .panel-heading.note-toolbar .note-color-palette div .note-color-btn:hover {
+  border: 1px solid #000; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog > div {
+  display: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .form-group {
+  margin-right: 0;
+  margin-left: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-modal-form {
+  margin: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-image-dialog .note-dropzone {
+  min-height: 100px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 4;
+  color: lightgray;
+  text-align: center;
+  border: 4px dashed lightgray; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog {
+  font-size: 12px;
+  color: #ccc;
+  background: transparent;
+  background-color: #222 !important;
+  border: 0;
+  -webkit-opacity: .9;
+  -khtml-opacity: .9;
+  -moz-opacity: .9;
+  opacity: .9;
+  -ms-filter: alpha(opacity=90);
+  filter: alpha(opacity=90); }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .modal-content {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog a {
+  font-size: 12px;
+  color: white; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .title {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-bottom: white 1px solid; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .modal-close {
+  font-size: 14px;
+  color: #dd0;
+  cursor: pointer; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .text-center {
+  margin: 10px 0 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .note-shortcut {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .note-shortcut-row {
+  margin-right: -5px;
+  margin-left: -5px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .note-shortcut-col {
+  padding-right: 5px;
+  padding-left: 5px; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .note-shortcut-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #dd0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-dialog .note-help-dialog .note-shortcut-key {
+  font-family: "Courier New";
+  color: #dd0;
+  text-align: right; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection {
+  position: absolute;
+  display: none;
+  border: 1px solid black; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection > div {
+  position: absolute; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-selection-bg {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -webkit-opacity: .3;
+  -khtml-opacity: .3;
+  -moz-opacity: .3;
+  opacity: .3;
+  -ms-filter: alpha(opacity=30);
+  filter: alpha(opacity=30); }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-handle {
+  width: 7px;
+  height: 7px;
+  border: 1px solid black; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-holder {
+  width: 7px;
+  height: 7px;
+  border: 1px solid black; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-sizing {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border: 1px solid black; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-nw {
+  top: -5px;
+  left: -5px;
+  border-right: 0;
+  border-bottom: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-ne {
+  top: -5px;
+  right: -5px;
+  border-bottom: 0;
+  border-left: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-sw {
+  bottom: -5px;
+  left: -5px;
+  border-top: 0;
+  border-right: 0; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-se {
+  right: -5px;
+  bottom: -5px;
+  cursor: se-resize; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-se.note-control-holder {
+  cursor: default;
+  border-top: 0;
+  border-left: none; }
+
+/* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote.css */
+.note-handle .note-control-selection .note-control-selection-info {
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  -webkit-opacity: .7;
+  -khtml-opacity: .7;
+  -moz-opacity: .7;
+  opacity: .7;
+  -ms-filter: alpha(opacity=70);
+  filter: alpha(opacity=70); }
+
 /* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/bower_components/summernote/dist/summernote-bs3.css */
 .note-editor {
   /*! normalize.css v2.1.3 | MIT License | git.io/normalize */ }
@@ -23797,59 +24260,72 @@ table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc:af
 
 /* line 19, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .modal-dialog {
-  margin-top: 80px; }
+  margin-top: 80px;
+  padding: 0; }
+  /* line 23, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+  .modal-dialog.modal-boxed {
+    max-width: 600px;
+    margin-top: calc(10vh - 10px); }
 
-/* line 22, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 29, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+.modal-dialog.modal-boxed .modal-body {
+  height: calc(80vh - 122px);
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
+/* line 36, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .modal-title {
   font-size: 30px;
   font-weight: 300; }
 
-/* line 26, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 40, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .modal-header {
-  padding: 40px 30px;
+  padding: 20px 30px;
   background: #f9f9fa; }
 
-/* line 30, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 44, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .modal-body {
   padding: 20px 30px; }
 
-/* line 33, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 47, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .modal-header small {
   color: #5e5e5e; }
 
-/* line 36, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 50, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .modal-footer {
+  margin-top: 0;
   background: #f9f9fa; }
 
-/* line 40, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 55, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .hmodal-info .color-line {
   background: #a9c7ea; }
 
-/* line 43, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 58, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .hmodal-warning .color-line {
   background: #ffc82c; }
 
-/* line 46, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 61, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .hmodal-success .color-line {
   background: #13ce66; }
 
-/* line 49, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 64, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .hmodal-danger .color-line {
   background: #c0392b; }
 
-/* line 53, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 68, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .hmodal-info h4.modal-title {
   color: #a9c7ea; }
 
-/* line 56, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 71, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .hmodal-warning h4.modal-title {
   color: #ffc82c; }
 
-/* line 59, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 74, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .hmodal-success h4.modal-title {
   color: #13ce66; }
 
-/* line 62, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
+/* line 77, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_modal.scss */
 .hmodal-danger h4.modal-title {
   color: #c0392b; }
 
@@ -24916,11 +25392,11 @@ body.page-small.show-sidebar #wrapper {
 /* line 409, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_various.scss */
 a {
   cursor: pointer;
-  color: #1677cb; }
+  color: #2b2b2b; }
 
 /* line 414, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_various.scss */
 a:hover, a:focus {
-  color: #1677cb;
+  color: #68717c;
   text-decoration: none; }
 
 /* line 419, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_various.scss */
@@ -25766,6 +26242,11 @@ label.error:before {
 .form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
   margin-left: -20px; }
 
+/* line 1215, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_various.scss */
+.note-editor .note-editing-area .note-editable {
+  border: none;
+  min-height: 150px; }
+
 /* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_buttons.scss */
 .header-line.extreme-color {
   width: 20%; }
@@ -26133,44 +26614,43 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6 .h6 {
 /* line 47, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 small, .small {
   font-weight: 400;
-  line-height: 1;
   font-size: .93rem;
   color: #68717c;
   display: block;
   margin-bottom: 10px; }
 
-/* line 56, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 55, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-light {
   font-weight: 200; }
 
-/* line 59, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 58, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-normal {
   font-weight: 400; }
 
-/* line 62, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 61, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-bold, .font-extra-bold {
   font-weight: 700; }
 
-/* line 66, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 65, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-uppercase {
   text-transform: uppercase; }
 
-/* line 70, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 69, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-trans {
   opacity: 0.5 !important; }
 
-/* line 74, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 73, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .text-icon-28 {
   font-size: 28px; }
 
-/* line 78, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 77, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .text-icon-20 {
   font-size: 20px;
   line-height: .9;
   position: relative;
   display: block; }
 
-/* line 85, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 84, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .text-big {
   font-size: 60px; }
 
@@ -26359,9 +26839,10 @@ body {
   .boxed .boxed-wrapper {
     display: block;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    border: 1px solid #e4e5e7; }
 
 /* Lists */
 /* line 2, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_lists.scss */

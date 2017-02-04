@@ -44,6 +44,7 @@ config.collection = {
     'bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css',
     'bower_components/pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.css',
     'bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css',
+    'bower_components/summernote/dist/summernote.css',
     'bower_components/summernote/dist/summernote-bs3.css',
     'bower_components/metisMenu/dist/metisMenu.css',
     'bower_components/select2/select2.css',

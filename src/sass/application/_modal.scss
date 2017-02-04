@@ -18,13 +18,27 @@
 }
 .modal-dialog {
   margin-top: 80px;
+  padding: 0;
+
+  &.modal-boxed {
+    max-width: 600px;
+    margin-top: calc(10vh - 10px);
+  }
 }
+
+.modal-dialog.modal-boxed .modal-body {
+  height: calc(80vh - 122px);
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; 
+}
+
 .modal-title {
   font-size: 30px;
   font-weight: 300;
 }
 .modal-header {
-  padding: 40px 30px;
+  padding: 20px 30px;
   background: $color-bright;
 }
 .modal-body {
@@ -34,6 +48,7 @@
   color: lighten($color-text, 20%);
 }
 .modal-footer {
+  margin-top: 0;
   background: $color-bright;
 }
 

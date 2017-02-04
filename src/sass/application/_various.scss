@@ -408,11 +408,11 @@ body.page-small.show-sidebar #wrapper {
 
 a {
   cursor: pointer;
-  color: $color-primary-ninja;
+  color: $color-text;
 }
 
 a:hover, a:focus {
-  color: $color-primary-ninja;
+  color: $color-dark-gray;
   text-decoration: none;
 }
 
@@ -1211,4 +1211,9 @@ label.error:before {
 
 .form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
   margin-left: -20px;
+}
+
+.note-editor .note-editing-area .note-editable {
+  border: none;
+  min-height: 150px
 }
