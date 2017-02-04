@@ -230,7 +230,6 @@
                 total: 200,
                 showLabel: false
             });
-
         });
     </script>
 

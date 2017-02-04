@@ -518,6 +518,7 @@
             $.plot($("#flot-line-chart"), lineChartData, lineChartOptions);
         });
 
+
     </script>
 
 </body>

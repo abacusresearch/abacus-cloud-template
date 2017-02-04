@@ -312,7 +312,6 @@
                     ;
 
             $.plot($("#flot-sin-chart"), data5, chartUsersOptions5);
-
         });
 
     </script>
