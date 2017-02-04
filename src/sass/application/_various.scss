@@ -406,6 +406,12 @@ body.page-small.show-sidebar #wrapper {
   margin-left: $menu-width;
 }
 
+body.blank {
+  footer {
+    display: none;
+  }
+}
+
 a {
   cursor: pointer;
   color: $color-text;
