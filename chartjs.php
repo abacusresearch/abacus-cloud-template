@@ -395,7 +395,6 @@
                 responsive: true,
             };
 
-
             var ctx = document.getElementById("doughnutChart").getContext("2d");
             var myNewChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);
 

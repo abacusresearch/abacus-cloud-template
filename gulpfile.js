@@ -8,7 +8,6 @@ var gulp = require('gulp'),
   cleanDest = require('gulp-clean-dest'),
   uglify = require('gulp-uglify');
 
-
 var config = {};
 config.projectName = 'application';
 config.isProduction = gutil.env.prod;

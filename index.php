@@ -408,7 +408,6 @@
                 </div>
             </div>
 
-
             <?php include('partials/footer.php'); ?>
 
         </div>
@@ -481,8 +480,6 @@
             };
 
             $.plot($("#flot-income-chart"), chartIncomeData, chartIncomeOptions);
-
-
 
         });
 
