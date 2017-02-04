@@ -30,7 +30,7 @@
   z-index: 9999;
   top: 100%;
   background: transparent;
-  color: #7c8998;
+  color: $color-text-gray;
   border: none;
   border-top: none;
   border-radius: 0 0 3px 3px;
@@ -52,7 +52,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #FFF;
-  border: 1px solid #7c8998;
+  border: 1px solid $color-text-gray;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 

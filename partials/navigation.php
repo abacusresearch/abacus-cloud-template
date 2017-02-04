@@ -1,7 +1,7 @@
 <aside id="menu">
     <div id="navigation">
         <ul class="nav" id="side-menu">
-            <li class="<?php echo $pageName == 'Dashboard' ? 'active' : '' ?>"><a href="index.php"><span class="nav-label">Dashboard</span></a></li>
+            <li class="<?php echo $pageName == 'Index' ? 'active' : '' ?>"><a href="index.php"><span class="nav-label">Dashboard</span></a></li>
             <li class="<?php echo $pageName == 'Analytics' ? 'active' : '' ?>"><a href="analytics.php"> <span class="nav-label">Analytics</span></a></li>
             <li>
                 <a href="#"><span class="nav-label">Interface</span><span class="fa arrow text-primary-2"></span> </a>

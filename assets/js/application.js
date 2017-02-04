@@ -4165,22 +4165,21 @@ $.fn.animatePanel = function() {
      */
 
     $("span.pie").peity("pie", {
-        fill: ["#62cb31", "#edf0f5"]
+        fill: ["#1677cb", "#edf0f5"]
     });
 
     $(".line").peity("line",{
-        fill: '#62cb31',
+        fill: '#1677cb',
         stroke:'#edf0f5'
     });
 
     $(".bar").peity("bar", {
-        fill: ["#62cb31", "#edf0f5"]
+        fill: ["#1677cb", "#edf0f5"]
     });
 
     $(".bar_dashboard").peity("bar", {
-        fill: ["#62cb31", "#edf0f5"]
+        fill: ["#1677cb", "#edf0f5"]
     });
 
 };
-
 //# sourceMappingURL=maps/application.js.map

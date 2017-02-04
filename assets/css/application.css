@@ -16681,7 +16681,7 @@ h3, .h3 {
 
 /* line 50, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 17px; }
 
 /* line 51, bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h5, .h5 {
@@ -23874,39 +23874,44 @@ table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc:af
 .progress-bar-success {
   border-right: 4px solid #11b75a; }
 
-/* line 23, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+/* line 22, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+.progress-bar-primary {
+  background-color: #1677cb;
+  border-right: 4px solid #146ab4; }
+
+/* line 27, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
 .progress-bar-info {
   border-right: 4px solid #95bae5; }
 
-/* line 27, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+/* line 31, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
 .progress-bar-warning {
   border-right: 4px solid #ffc113; }
 
-/* line 31, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+/* line 35, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
 .progress-bar-danger {
   border-right: 4px solid #ff3030; }
 
-/* line 35, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+/* line 39, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
 .full .progress-bar-success {
   background-color: #13ce66;
   border-right: 4px solid #11b75a; }
 
-/* line 40, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+/* line 44, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
 .full .progress-bar-info {
   background-color: #a9c7ea;
   border-right: 4px solid #95bae5; }
 
-/* line 45, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+/* line 49, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
 .full .progress-bar-warning {
   background-color: #ffc82c;
   border-right: 4px solid #ffc113; }
 
-/* line 50, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+/* line 54, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
 .full .progress-bar-danger {
   background-color: #ff4949;
   border-right: 4px solid #ff3030; }
 
-/* line 55, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
+/* line 59, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_progress_bar.scss */
 .full .progress-bar {
   color: #ffffff; }
 
@@ -25026,7 +25031,7 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 .stats-title h4 {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600; }
+  font-weight: 700; }
 
 /* Widths */
 /* line 532, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_various.scss */
@@ -26118,51 +26123,56 @@ label.error:before {
 
 /* Fonts */
 /* line 39, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6 .h6 {
+  font-family: Europa, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/* line 47, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+small, .small {
+  font-weight: 400;
+  line-height: 1;
+  font-size: .93rem;
+  color: #333333;
+  display: block;
+  margin-bottom: 10px; }
+
+/* line 56, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-light {
   font-weight: 200; }
 
-/* line 42, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 59, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-normal {
   font-weight: 400; }
 
-/* line 45, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 62, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-bold, .font-extra-bold {
   font-weight: 700; }
 
-/* line 49, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 66, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-uppercase {
   text-transform: uppercase; }
 
-/* line 53, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 70, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .font-trans {
   opacity: 0.5 !important; }
 
-/* line 57, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 74, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .text-icon-28 {
   font-size: 28px; }
 
-/* line 61, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 78, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .text-icon-20 {
   font-size: 20px;
   line-height: .9;
   position: relative;
   display: block; }
 
-/* line 68, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
+/* line 85, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
 .text-big {
   font-size: 60px; }
-
-/* line 72, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 400; }
-
-/* line 78, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_fonts.scss */
-small, .small {
-  font-size: 100%;
-  color: #7c8998;
-  font-weight: 400; }
 
 /* Layout */
 /* line 2, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
@@ -26176,13 +26186,13 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden !important; }
-
-/* line 15, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
-body {
+  overflow-x: hidden !important;
   font-family: Europa, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+
+/* line 17, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+body {
   background-color: #f5f5f7;
-  font-size: 13px;
   color: #2b2b2b;
   margin: 0;
   padding: 0;
@@ -26208,9 +26218,10 @@ body {
   top: 56px;
   -webkit-transition: all 0.15s ease-out 0s;
           transition: all 0.15s ease-out 0s;
-  background-color: #FFF; }
+  background-color: #FFF;
+  font-size: .93rem; }
 
-/* line 47, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 48, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 #wrapper {
   margin: 0 0 0 182px;
   padding: 0;
@@ -26221,12 +26232,12 @@ body {
   position: relative;
   min-height: 100vh; }
 
-/* line 57, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 58, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .content {
   padding: 25px 40px 40px 40px;
   min-width: 320px; }
 
-/* line 62, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 63, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .footer {
   padding: 10px 18px;
   background: #fff;
@@ -26239,42 +26250,42 @@ body {
   right: 0; }
 
 @media (max-width: 768px) {
-  /* line 75, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+  /* line 76, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
   .content {
     padding: 15px 15px 15px 15px;
     min-width: 320px; } }
 
-/* line 82, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 83, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .content-boxed {
   max-width: 1100px;
   margin: auto;
   padding-top: 60px; }
 
-/* line 89, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 90, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 #page-header {
   padding: 20px 40px; }
 
-/* line 93, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 94, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-navbar #header {
   width: 100%;
   position: fixed;
   z-index: 1000; }
 
-/* line 100, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 101, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-navbar #wrapper {
   top: 56px; }
 
-/* line 104, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 105, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-sidebar #menu {
   position: fixed;
   overflow-x: hidden;
   overflow-y: auto; }
 
-/* line 110, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 111, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-sidebar.show-sidebar #menu {
   width: 182px; }
 
-/* line 114, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 115, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-footer .footer {
   position: fixed;
   z-index: 1001;
@@ -26282,19 +26293,19 @@ body {
   left: calc($menu-width + 1px);
   right: 0; }
 
-/* line 122, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 123, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-footer.hide-sidebar .footer {
   left: 0; }
 
 @media (max-width: 768px) {
-  /* line 128, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+  /* line 129, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
   .fixed-footer .footer {
     left: 0; }
-  /* line 132, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+  /* line 133, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
   .fixed-footer.show-sidebar .footer {
     left: calc($menu-width + 1px); } }
 
-/* line 138, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 139, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 #right-sidebar {
   background-color: #fff;
   border-left: 1px solid #e4e5e7;
@@ -26307,11 +26318,11 @@ body {
   display: none;
   overflow: auto; }
 
-/* line 151, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 152, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 #right-sidebar.sidebar-open {
   display: block; }
 
-/* line 157, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 158, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-small-header .small-header {
   position: fixed;
   top: 56px;
@@ -26320,31 +26331,31 @@ body {
   margin-left: calc($menu-width + 1px);
   z-index: 100; }
 
-/* line 166, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 167, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-small-header .content {
   padding-top: 80px; }
 
-/* line 170, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 171, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-small-header.hide-sidebar .small-header {
   margin-left: 0; }
 
-/* line 174, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 175, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-small-header.page-small .small-header {
   margin-left: 0; }
 
-/* line 178, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 179, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-small-header.page-small .content {
   padding-top: 120px; }
 
-/* line 182, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 183, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .fixed-small-header.page-small.show-sidebar .small-header {
   margin-left: calc($menu-width + 1px);
   overflow: hidden; }
 
-/* line 187, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+/* line 188, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
 .boxed {
   background-color: #ffffff; }
-  /* line 191, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
+  /* line 192, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_layout.scss */
   .boxed .boxed-wrapper {
     display: block;
     max-width: 1200px;
@@ -26477,7 +26488,7 @@ body {
 /* line 73, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_panels.scss */
 .panel-tools a {
   margin-left: 5px;
-  color: #5e5e5e;
+  color: #7c8998;
   cursor: pointer; }
 
 /* line 79, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_panels.scss */
@@ -27322,8 +27333,8 @@ ul.mailbox-list li:hover a, ul.h-list li:hover a {
 
 /* line 1, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
 .label {
-  font-size: 12px;
-  line-height: 1.0;
+  font-size: 11px;
+  line-height: 1;
   letter-spacing: 0.5px;
   font-weight: 700;
   text-transform: uppercase;
@@ -27331,27 +27342,44 @@ ul.mailbox-list li:hover a, ul.h-list li:hover a {
   min-height: 20px;
   position: relative;
   display: inline-block;
-  border-radius: 2px; }
-  /* line 13, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
-  .label.status-failed {
-    background-color: #ff4136; }
-  /* line 16, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
-  .label.status-sent {
-    background-color: #67cb17; }
-  /* line 19, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
-  .label.status-viewed {
-    background-color: #16cb81; }
-  /* line 22, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
-  .label.status-approved {
-    background-color: #16b0cb; }
+  border-radius: 2px;
+  color: #2b2b2b; }
+  /* line 14, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
+  .label.legend {
+    text-transform: none;
+    font-weight: 400;
+    min-height: 0;
+    padding: 0;
+    display: block;
+    border-radius: 0;
+    line-height: 1.1;
+    text-align: left; }
   /* line 25, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
+  .label.status-failed {
+    background-color: #ff4136;
+    color: #FFF; }
+  /* line 29, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
+  .label.status-sent {
+    background-color: #67cb17;
+    color: #FFF; }
+  /* line 33, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
+  .label.status-viewed {
+    background-color: #16cb81;
+    color: #FFF; }
+  /* line 37, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
+  .label.status-approved {
+    background-color: #16b0cb;
+    color: #FFF; }
+  /* line 41, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
   .label.status-payed {
-    background-color: #1677cb; }
-  /* line 28, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
+    background-color: #1677cb;
+    color: #FFF; }
+  /* line 45, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
   .label.status-draft {
-    background-color: #7c8998; }
+    background-color: #7c8998;
+    color: #FFF; }
 
-/* line 31, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
+/* line 49, /Users/yeshe/work/AC_abacus/abacus-cloud-template/src/sass/application/_labels.sass */
 .label-block {
   display: block;
   margin-left: 24px;

@@ -1,6 +1,6 @@
 /* Panels */
 .hpanel > .panel-heading {
-  color: #7c8998;
+  color: $color-text-gray;
   font-weight: 600;
   padding: 10px 0;
   transition: $main-transition;
@@ -72,7 +72,7 @@
 
 .panel-tools a {
   margin-left: 5px;
-  color: lighten($color-text, 20%);
+  color: $color-text-gray;
   cursor: pointer;
 }
 

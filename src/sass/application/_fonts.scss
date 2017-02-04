@@ -34,8 +34,25 @@
   text-rendering: optimizeLegibility;
 }
 
-
 /* Fonts */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6 {
+  font-family: $font-family;
+  font-weight: 400;
+  color: $text-color;
+  margin-top: ceil($line-height-computed / 2);
+  margin-bottom: ceil($line-height-computed / 2);
+}
+
+small, .small {
+  font-weight: 400;
+  line-height: 1;
+  font-size: .93rem;
+  color: $text-color;
+  display: block;
+  margin-bottom: 10px
+} 
+
 .font-light {
   font-weight: 200;
 }
@@ -67,16 +84,4 @@
 
 .text-big {
   font-size: 60px;
-}
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 400;
-}
-
-small, .small {
-  font-size: 100%;
-  color: #7c8998;
-  font-weight: 400
 }

@@ -19,6 +19,10 @@
 .progress-bar-success {
   border-right: 4px solid darken($color-green, 5%);
 }
+.progress-bar-primary {
+  background-color: $color-primary-ninja;
+  border-right: 4px solid darken($color-primary-ninja, 5%);
+}
 
 .progress-bar-info {
   border-right: 4px solid darken($color-blue, 5%);
