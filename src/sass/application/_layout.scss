@@ -9,14 +9,14 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-x: hidden !important;
-  font-family: $font-family;
   font-size: $font-size-base;
 }
 
 body {
   background-color: #f5f5f7;
   color: $color-text;
+  font-family: $font-family;
+  font-size: $font-size-base;
   margin: 0;
   padding: 0;
   min-height: 100vh;

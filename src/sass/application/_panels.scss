@@ -1,7 +1,7 @@
 /* Panels */
 .hpanel > .panel-heading {
-  color: $color-text-gray;
-  font-weight: 600;
+  color: $color-dark-gray;
+  font-weight: 700;
   padding: 10px 0;
   transition: $main-transition;
   border: 1px solid transparent;
@@ -72,7 +72,7 @@
 
 .panel-tools a {
   margin-left: 5px;
-  color: $color-text-gray;
+  color: $color-dark-gray;
   cursor: pointer;
 }
 

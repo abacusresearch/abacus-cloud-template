@@ -13,8 +13,8 @@
 .header-line div {
   position: absolute;
   top: 70px;
-  left:15px;
-  font-weight: 600;
+  left: 15px;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -113,8 +113,8 @@
   color: #FFFFFF ;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-  background-color: lighten($color-primary-ninja, 6%);
-  border-color: lighten($color-primary-ninja, 6%);
+  background-color: #4290d5;
+  border-color: #4290d5;
   color: #FFFFFF ;
 }
 .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
@@ -131,8 +131,8 @@
   color: #FFFFFF ;
 }
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open .dropdown-toggle.btn-secondary {
-  background-color: lighten($color-secondary, 6%);
-  border-color: lighten($color-secondary, 6%);
+  background-color: lighten($color-secondary, 12%);
+  border-color: lighten($color-secondary, 12%);
   color: #FFFFFF ;
 }
 .btn-secondary:active, .btn-secondary.active, .open .dropdown-toggle.btn-secondary {
@@ -149,8 +149,8 @@
   color: #FFFFFF ;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-  background-color: lighten($color-green, 6%);
-  border-color: lighten($color-green, 6%);
+  background-color: #4edb8d;
+  border-color: #4edb8d;
   color: #FFFFFF ;
 }
 .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
@@ -167,8 +167,8 @@
   color: #FFFFFF ;
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
-  background-color: lighten($color-blue, 6%);
-  border-color: lighten($color-blue,6%);
+  background-color: #b3cbea;
+  border-color: #b3cbea;
   color: #FFFFFF ;
 }
 .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
@@ -182,12 +182,12 @@
 .btn-default {
   background-color: #fff;
   border-color: $border-color;
-  color: $color-text;
+  color: $color-dark-gray;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
   background-color: #fff;
-  border-color: darken($border-color,4%);
-  color: darken($color-text,4%);
+  border-color: darken($border-color, 4%);
+  color: darken($color-dark-gray, 4%);
 }
 .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
   background-image: none;
@@ -203,8 +203,8 @@
   color: #FFFFFF ;
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
-  background-color: lighten($color-yellow,6%);
-  border-color: lighten($color-yellow,6%);
+  background-color: #ffd661;
+  border-color: #ffd661;
   color: #FFFFFF ;
 }
 .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
@@ -221,8 +221,8 @@
   color: #FFFFFF ;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
-  background-color: lighten($color-red,6%);
-  border-color: lighten($color-red,6%);
+  background-color: #ff7777;
+  border-color: #ff7777;
   color: #FFFFFF ;
 }
 .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger {
