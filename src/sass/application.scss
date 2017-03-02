@@ -1,0 +1,40 @@
+@import "application/variables";
+
+// vendor overrides
+@import "vendor/bootstrap-custom";
+@import "vendor/select2-custom";
+@import "vendor/chartist-custom";
+@import "vendor/tables-custom";
+
+// Import all styles
+@import "application/general";
+@import "application/margins";
+@import "application/alerts";
+@import "application/modal";
+@import "application/progress_bar";
+@import "application/login";
+@import "application/timeline";
+@import "application/contact";
+@import "application/calendar";
+@import "application/text_editor";
+@import "application/grid";
+@import "application/dropdown";
+@import "application/chat";
+@import "application/various";
+@import "application/buttons";
+@import "application/fonts";
+@import "application/layout";
+@import "application/lists";
+@import "application/panels";
+@import "application/tabs";
+@import "application/tooltip";
+@import "application/projects";
+@import "application/social_board";
+@import "application/nestable_list";
+@import "application/tour";
+@import "application/blog";
+@import "application/forum";
+@import "application/mailbox";
+@import "application/loader";
+@import "application/forms";
+@import "application/labels";
