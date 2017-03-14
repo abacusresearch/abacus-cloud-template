@@ -1,0 +1,13 @@
+{
+    "name": "abacusresearch/abacus-cloud-template",
+    "type": "project",
+    "require": {
+        "php": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "bower install",
+            "npm install"
+        ]
+    }
+}
