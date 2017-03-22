@@ -46,6 +46,15 @@
 .btn {
   padding: 7px 20px;
   border-radius: 4px;
+  margin-bottom: 10px;
+  ~ .btn:not(.btn-block) {
+    margin-left: 6px
+  }
+}
+.modal-footer {
+  .btn {
+    margin-bottom: 0;
+  }
 }
 
 .float-e-margins .btn {

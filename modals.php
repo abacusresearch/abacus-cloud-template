@@ -42,6 +42,9 @@
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalWithoutSub">
                                         Launch demo modal without subtitle
                                     </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ctaDialog">
+                                        Launch dialog call to action
+                                    </button>
                                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
@@ -81,15 +84,34 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="modal fade" id="ctaDialog" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content text-center">
+                                                
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Call to action title dialog</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <button type="button" class="btn btn-secondary btn-lg">Action</button>
+                                                    <button type="button" class="btn btn-primary btn-lg">Action and another action</button>
+                                                    <p class="text-muted"><i class="fa fa-info-circle"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum illo ut fugiat quia commodi magni inventore ullam facilis maiores tenetur saepe fugit, consequatur eius blanditiis quibusdam eum, alias sed voluptates?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="m-t-md">
-                                    <pre>
-                                        &lt;button type="button" class="btn btn-success"
-                                                data-toggle="modal" data-target="#myModal"&gt;
-                                                Launch demo modal
-                                        &lt;/button&gt;
-                                    </pre>
+<pre>
+    &lt;button type="button" class="btn btn-success"
+            data-toggle="modal" data-target="#myModal"&gt;
+            Launch demo modal
+    &lt;/button&gt;
+</pre>
                                 </div>
                             </div>
                         </div>
@@ -258,12 +280,12 @@
                                 </div>
 
                                 <div class="m-t-md">
-                                    <pre>
-                                    var modalInstance = $modal.open({
-                                           templateUrl: 'views/modal/modal_example2.html',
-                                           controller: ModalInstanceCtrl,
-                                           windowClass: "hmodal-success"
-                                    }); </pre>
+<pre>
+var modalInstance = $modal.open({
+       templateUrl: 'views/modal/modal_example2.html',
+       controller: ModalInstanceCtrl,
+       windowClass: "hmodal-success"
+}); </pre>
                                 </div>
                             </div>
                         </div>
