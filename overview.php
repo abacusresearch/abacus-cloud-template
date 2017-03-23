@@ -1,6 +1,6 @@
-<?php 
-    $filename = basename(__FILE__, '.php');
-    $pageName = ucwords(str_replace("_", " ", $filename));
+<?php
+  $filename = basename(__FILE__, '.php');
+  $pageName = ucwords(str_replace("_", " ", $filename));
 ?>
 
 <!DOCTYPE html>

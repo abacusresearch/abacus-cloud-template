@@ -225,3 +225,4 @@ $.fn.animatePanel = function() {
     });
 
 };
+

@@ -39,7 +39,7 @@ body {
   left: 0;
   position: absolute;
   top: 56px;
-  transition: $main-transition;
+  transition: all $main-transition;
   background-color: #FFF;
   font-size: .93rem
 }
@@ -50,7 +50,7 @@ body {
   padding: 0;
   background: $color-background;
   border-left: 1px solid $border-color;
-  transition: $main-transition;
+  transition: all $main-transition;
   position: relative;
   min-height: 100vh;
 }
@@ -200,4 +200,11 @@ body {
   }
 
 
+}
+
+
+.externalpage-container {
+  max-width: 690px;
+  margin: auto;
+  padding-top: 60px;
 }

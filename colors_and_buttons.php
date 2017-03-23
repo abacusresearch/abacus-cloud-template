@@ -1,6 +1,6 @@
-<?php 
-    $filename = basename(__FILE__, '.php');
-    $pageName = ucwords(str_replace("_", " ", $filename));
+<?php
+  $filename = basename(__FILE__, '.php');
+  $pageName = ucwords(str_replace("_", " ", $filename));
 ?>
 
 <!DOCTYPE html>
@@ -63,16 +63,22 @@
                                     Use any of the available button classes to quickly create a styled button.
                                 </p>
 
-                                <p>
+                                <div>
                                     <button type="button" class="btn w-xs btn-default">Default</button>
                                     <button type="button" class="btn w-xs btn-primary">Primary</button>
+                                </div>
+                                <div>
                                     <button type="button" class="btn w-xs btn-secondary">Secondary</button>
                                     <button type="button" class="btn w-xs btn-info">Info</button>
+                                </div>
+                                <div>
                                     <button type="button" class="btn w-xs btn-success">Success</button>
                                     <button type="button" class="btn w-xs btn-warning">Warning</button>
+                                </div>
+                                <div>
                                     <button type="button" class="btn w-xs btn-danger">Danger</button>
                                     <button type="button" class="btn w-xs btn-link">Simple link</button>
-                                </p>
+                                </div>
 
                             </div>
                         </div>
@@ -90,20 +96,22 @@
                                 <p>
                                     If You want larger or smaller buttons You can add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> class.
                                 </p>
-
-                                <p>
+                                <div>
                                     <button type="button" class="btn btn-primary btn-lg">Large</button>
                                     <button type="button" class="btn btn-default btn-lg">Large</button>
-                                    <br/>
+                                </div>
+                                <div>
                                     <button type="button" class="btn btn-primary">Default</button>
                                     <button type="button" class="btn btn-default">Default</button>
-                                    <br/>
+                                </div>
+                                <div>
                                     <button type="button" class="btn btn-primary btn-sm">Small</button>
                                     <button type="button" class="btn btn-default btn-sm">Small</button>
-                                    <br/>
+                                </div>
+                                <div>
                                     <button type="button" class="btn btn-primary btn-xs">Mini</button>
                                     <button type="button" class="btn btn-default btn-xs">Mini</button>
-                                </p>
+                                </div>
 
                             </div>
                         </div>
@@ -121,16 +129,21 @@
                                 <p>
                                     Create block level buttons or outline buttons, by adding <code>.btn-block</code> or <code>.btn-outline</code>.
                                 </p>
-
-                                <p>
+                                
+                                <div>
                                     <button type="button" class="btn btn-outline btn-default">Default</button>
                                     <button type="button" class="btn btn-outline btn-primary">Primary</button>
+                                </div>
+                                <div>
                                     <button type="button" class="btn btn-outline btn-secondary">Secondary</button>
                                     <button type="button" class="btn btn-outline btn-info">Info</button>
+                                </div>
+                                <div>
                                     <button type="button" class="btn btn-outline btn-success">Success</button>
                                     <button type="button" class="btn btn-outline btn-warning">Warning</button>
+                                </div>
+                                <div>
                                     <button type="button" class="btn btn-outline btn-danger">Danger</button>
-                                </p>
                                 <p>
                                     <button type="button" class="btn btn-block btn-outline btn-default">Block button</button>
                                 </p>
@@ -306,11 +319,18 @@
                                 <p>
                                     To buttons with any color or any size you can add extra icon on the left or the right side.
                                 </p>
-                                <button class="btn btn-primary " type="button"><i class="fa fa-check"></i> Submit</button>
-                                <button class="btn btn-success " type="button"><i class="fa fa-upload"></i> <span class="bold">Upload</span></button>
-                                <button class="btn btn-info " type="button"><i class="fa fa-paste"></i> Edit</button>
-                                <button class="btn btn-danger" type="button"><i class="fa fa-trash-o"></i> <span class="bold">Delete</span></button>
-                                <button class="btn btn-default " type="button"><i class="fa fa-map-marker"></i> Map</button>
+                                <div>
+                                    <button class="btn btn-primary " type="button"><i class="fa fa-check"></i> Submit</button>
+                                    <button class="btn btn-secondary " type="button"><i class="fa fa-upload"></i> <span class="bold">Upload</span></button>
+                                </div>
+                                <div>
+                                    <button class="btn btn-info " type="button"><i class="fa fa-paste"></i> Edit</button>
+                                    <button class="btn btn-danger" type="button"><i class="fa fa-trash-o"></i> <span class="bold">Delete</span></button>
+                                </div>
+                                <div>
+                                    <button class="btn btn-default " type="button"><i class="fa fa-map-marker"></i> Map</button>
+                                </div>
+                                <div>
 
                                 <a class="btn btn-default">
                                     <i class="fa fa-user-md"></i>
@@ -324,6 +344,8 @@
                                 <a class="btn btn-default">
                                     <i class="fa fa-exchange"></i>
                                 </a>
+                                </div>
+                                <div>
                                 <a class="btn btn-default">
                                     <i class="fa fa-check-circle-o"></i>
                                 </a>
@@ -336,6 +358,7 @@
                                 <a class="btn btn-default">
                                     <i class="fa fa-star"></i> Stared
                                 </a>
+                                </div>
 
                             </div>
                         </div>

@@ -538,12 +538,12 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 
 /* Widths */
 
-.w-xs { min-width: 100px; }
-.w-sm { min-width: 120px; }
-.w-m { min-width: 140px; }
-.w-lg { min-width: 160px; }
-.w-xl { min-width: 180px; }
-.w-xxl { min-width: 200px; }
+.w-xs { min-width: 120px; }
+.w-sm { min-width: 140px; }
+.w-m { min-width: 160px; }
+.w-lg { min-width: 180px; }
+.w-xl { min-width: 200px; }
+.w-xxl { min-width: 220px; }
 
 
 /* Charts */
@@ -1225,4 +1225,8 @@ label.error:before {
 .note-editor .note-editing-area .note-editable {
   border: none;
   min-height: 150px
+}
+
+.inline-block {
+  display: inline-block;
 }

@@ -34,6 +34,7 @@ config.collection = {
     'bower_components/datatables.net-buttons/js/buttons.print.min.js',
     'bower_components/datatables.net-buttons/js/dataTables.buttons.min.js',
     'bower_components/datatables.net-buttons-bs/js/buttons.bootstrap.min.js',
+    'bower_components/flickity/dist/flickity.pkgd.js',
     'bower_components/peity/jquery.peity.min.js', // maybe removable
     config.srcPath + 'js/**/*.js',
   ],
@@ -51,6 +52,7 @@ config.collection = {
     'bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css',
     'bower_components/toastr/toastr.min.css',
     'bower_components/c3/c3.min.css',
+    'bower_components/flickity/dist/flickity.min.css',
     config.srcPath + 'sass/application.s*ss'
   ],
   'sass': [

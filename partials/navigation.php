@@ -10,6 +10,7 @@
                     <li class="<?php echo $pageName == 'Typography' ? 'active' : '' ?>"><a href="typography.php">Typography</a></li>
                     <li class="<?php echo $pageName == 'Colors And Buttons' ? 'active' : '' ?>"><a href="colors_and_buttons.php">Colors &amp; Buttons</a></li>
                     <li class="<?php echo $pageName == 'Components' ? 'active' : '' ?>"><a href="components.php">Components</a></li>
+                    <li class="<?php echo $pageName == 'Slider' ? 'active' : '' ?>"><a href="slider.php">Slider</a></li>
                     <li class="<?php echo $pageName == 'Alerts' ? 'active' : '' ?>"><a href="alerts.php">Alerts</a></li>
                     <li class="<?php echo $pageName == 'Modals' ? 'active' : '' ?>"><a href="modals.php">Modals</a></li>
                     <li class="<?php echo $pageName == 'Icons Library' ? 'active' : '' ?>"><a href="icons_library.php">Icons library</a></li>
@@ -48,6 +49,7 @@
                 <ul class="nav nav-second-level">
                     <li class="<?php echo $pageName == 'Login' ? 'active' : '' ?>"><a href="login.php">Login</a></li>
                     <li class="<?php echo $pageName == 'Register' ? 'active' : '' ?>"><a href="register.php">Register</a></li>
+                    <li class="<?php echo $pageName == 'Guide' ? 'active' : '' ?>"><a href="guide.php">Guide</a></li>
                     <li class="<?php echo $pageName == 'Error 404' ? 'active' : '' ?>"><a href="error_404.php">Error 404</a></li>
                     <li class="<?php echo $pageName == 'Error 505' ? 'active' : '' ?>"><a href="error_505.php">Error 505</a></li>
                     <li class="<?php echo $pageName == 'Password Recovery' ? 'active' : '' ?>"><a href="password_recovery.php">Password recovery</a></li>

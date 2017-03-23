@@ -48,7 +48,7 @@
   border-radius: 4px;
   margin-bottom: 10px;
   ~ .btn:not(.btn-block) {
-    margin-left: 6px
+    // margin-left: 6px
   }
 }
 .modal-footer {
@@ -113,7 +113,7 @@
 .btn-outline {
   color: inherit !important;
   background-color: transparent !important;
-  transition: $main-transition;
+  transition: all $main-transition;
 }
 
 .btn-primary {
@@ -243,7 +243,8 @@
 }
 
 .btn-link {
-  color: inherit ;
+  color: $color-dark-gray;
+  text-decoration: underline;
 }
 .btn-link:hover, .btn-link:focus, .btn-link:active, .btn-link.active, .open .dropdown-toggle.btn-link {
   color: $color-text;

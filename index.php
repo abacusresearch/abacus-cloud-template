@@ -1,7 +1,6 @@
-<?php 
-    $filename = basename(__FILE__, '.php');
-    $pageName = ucwords(str_replace("_", " ", $filename));
-    $dev = $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ? true : false;
+<?php
+  $filename = basename(__FILE__, '.php');
+  $pageName = ucwords(str_replace("_", " ", $filename));
 ?>
 
 <!DOCTYPE html>
