@@ -24,19 +24,14 @@
 }
 
 .toast-message {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  right: 40px;
-  -webkit-transform: -webkit-translateY(-50%);
-  -ms-transform: -ms-translateY(-50%);
-  transform: translateY(-50%);
+  position: relative;
+  padding: 20px 40px 20px 20px;
 }
 
 .toast-close-button {
   position: absolute;
   right: 15px;
-  top: 50%;
+  top: 10px;
   float: none;
   font-size: 20px;
   font-weight: 400;
@@ -44,9 +39,6 @@
   -webkit-text-shadow: none;
   text-shadow: none;
   opacity: 1 !important;
-  -webkit-transform: -webkit-translateY(-50%);
-  -ms-transform: -ms-translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .toast-info {

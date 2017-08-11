@@ -93,7 +93,7 @@
             };
 
             $('.homerDemo1').click(function (){
-                toastr.info('Info - This is a custom Abacus info notification');
+                toastr.info('Info - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nisi totam, aliquid debitis. Vel, possimus, quasi. Rem enim ipsum eveniet modi, dolores sapiente facere aliquid. Quo deleniti hic obcaecati quos.');
             });
 
             $('.homerDemo2').click(function (){

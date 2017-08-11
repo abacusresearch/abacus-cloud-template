@@ -1,5 +1,5 @@
 <?php
-  $dev = ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['HTTP_HOST'] == 'abacus-cloud.dev') ? true : false;
+  $dev = ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['HTTP_HOST'] == 'abacus-cloud-template.dev') ? true : false;
 ?>
 
 <head>
