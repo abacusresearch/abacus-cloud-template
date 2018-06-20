@@ -1,39 +1,3 @@
-@font-face {
-  font-family: 'Europa';
-  src: url('../fonts/Europa-Bold.eot');
-  src: url('../fonts/Europa-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Europa-Bold.woff') format('woff'), 
-       url('../fonts/Europa-Bold.ttf') format('truetype'),
-       url('../fonts/Europa-Bold.svg#Europa-Bold') format('svg');
-  font-style: normal;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: 'Europa';
-  src: url('../fonts/Europa-Light.eot');
-  src: url('../fonts/Europa-Light.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Europa-Light.woff') format('woff'), 
-       url('../fonts/Europa-Light.ttf') format('truetype'),
-       url('../fonts/Europa-Light.svg#Europa-Light') format('svg');
-  font-style: normal;
-  font-weight: 200;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: 'Europa';
-  src: url('../fonts/Europa-Regular.eot');
-  src: url('../fonts/Europa-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Europa-Regular.woff') format('woff'), 
-       url('../fonts/Europa-Regular.ttf') format('truetype'),
-       url('../fonts/Europa-Regular.svg#Europa-Regular') format('svg');
-  font-style: normal;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-}
-
 /* Fonts */
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6  .h6 {
